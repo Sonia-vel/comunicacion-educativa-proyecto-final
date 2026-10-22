@@ -10,10 +10,15 @@ _Evitar_: tipo de actividad, etapa
 
 **Actividad**: Una unidad de trabajo del alumnado dentro de una fase, con su propia consigna y respuestas. Las actividades de Síntesis (carta y diseño del terrario) son actividades separadas.
 
-**Video**: Uno de los tres videos que graba la autora: el experimento (Exploración), la explicación de conceptos (Nuevos puntos de vista) y el tutorial del terrario (Generalización).
+**Video**: Uno de los tres videos que graba el equipo: el experimento (Exploración), la explicación de conceptos (Nuevos puntos de vista) y el tutorial del terrario (Generalización).
 
 **Guion**: El documento escrito de cada video que se entrega a la profesora o profesor junto con el video, con el formato visto en clase.
 
 **Carta del pueblo**: La carta ficticia de San Miguel de las Flores que pide consejo sobre sus abejas. La **carta de respuesta** es la que escribe el alumnado en Síntesis.
 
 **Terrario**: El ecosistema en miniatura que el alumnado primero diseña (Síntesis) y después construye (Generalización).
+
+**Ramona**: La rata, marioneta de guante, que aparece en los tres videos y en la WebQuest. Es una integrante de un ecosistema que a veces dice en voz alta las ideas previas del alumnado; lo que dice correcto lo dice solo después de que el equipo la corrige.
+_Evitar_: la mascota, la rata (sin nombre)
+
+**Dato de rata**: Un dato curioso y verificado sobre las relaciones de un ecosistema que Ramona comparte después de hablar con el equipo, y que cierra con "y ese es un dato de rata".
