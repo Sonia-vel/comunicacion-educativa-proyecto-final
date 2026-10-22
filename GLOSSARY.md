@@ -18,7 +18,7 @@ _Evitar_: tipo de actividad, etapa
 
 **Terrario**: El ecosistema en miniatura que el alumnado primero diseña (Síntesis) y después construye (Generalización).
 
-**Ramona**: La rata, marioneta de guante, que aparece en los tres videos y en la WebQuest. Es una integrante de un ecosistema que a veces dice en voz alta las ideas previas del alumnado; lo que dice correcto lo dice solo después de que el equipo la corrige.
+**Ramona**: La rata, marioneta de guante, que aparece en los tres videos y en la WebQuest. Es una integrante de un ecosistema. En los videos dice en voz alta ideas previas del alumnado y el equipo las corrige frente a cámara; en la WebQuest da datos correctos por su cuenta. Nunca dice que el equipo le dio la respuesta.
 _Evitar_: la mascota, la rata (sin nombre)
 
-**Dato de rata**: Un dato curioso y verificado sobre las relaciones de un ecosistema que Ramona comparte después de hablar con el equipo, y que cierra con "y ese es un dato de rata".
+**Dato de rata**: Un dato curioso y verificado sobre las relaciones de un ecosistema que comparte Ramona y que cierra con "y ese es un dato de rata".
