@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guardianas del Ecosistema</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Lexend:wght@300;400;600&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: una columna de lectura con un índice de fases; cada tipo de actividad tiene su propio color (agua, miel, hoja, tierra). */
+:root {
+  --bg: #F3F7F1;
+  --surface: #FFFFFF;
+  --ink: #1D2A23;
+  --muted: #56675D;
+  --line: #D6E2D3;
+  --leaf: #2E7A4D;
+  --honey: #B87A0A;
+  --honey-soft: #FBEFD2;
+  --water: #23708F;
+  --water-soft: #DDEEF4;
+  --leaf-soft: #E0F0E5;
+  --soil: #7A5236;
+  --soil-soft: #F1E6DC;
+  --paper: #FFFBEE;
+  --paper-line: #E9DFC4;
+  --ok: #2E7A4D;
+  --warn: #A3401E;
+  --f-display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  --f-body: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --f-hand: "Kalam", "Comic Sans MS", cursive;
+  --r: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101814; --surface: #17221C; --ink: #E4EDE6; --muted: #9FB2A6; --line: #2A3B31;
+    --leaf: #6CC690; --honey: #F0BE52; --honey-soft: #2E2715; --water: #6DB9DA; --water-soft: #15282F;
+    --leaf-soft: #17301F; --soil: #D2A47D; --soil-soft: #2B2119; --paper: #1E2520; --paper-line: #34403A;
+    --ok: #6CC690; --warn: #F08A64; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101814; --surface: #17221C; --ink: #E4EDE6; --muted: #9FB2A6; --line: #2A3B31;
+  --leaf: #6CC690; --honey: #F0BE52; --honey-soft: #2E2715; --water: #6DB9DA; --water-soft: #15282F;
+  --leaf-soft: #17301F; --soil: #D2A47D; --soil-soft: #2B2119; --paper: #1E2520; --paper-line: #34403A;
+  --ok: #6CC690; --warn: #F08A64; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--f-body); font-size: 17px; line-height: 1.65; font-weight: 300;
+}
+.wrap {
+  max-width: 980px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3, h4 { font-family: var(--f-display); line-height: 1.15; text-wrap: balance; margin: 0; font-weight: 700; }
+h2 { font-size: clamp(1.9rem, 4vw, 2.5rem); }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.15rem; }
+p { margin: 0; }
+strong { font-weight: 600; }
+a { color: var(--water); }
+:focus-visible { outline: 3px solid var(--honey); outline-offset: 2px; border-radius: 4px; }
+.prose { max-width: 66ch; display: grid; gap: 14px; }
+.eyebrow { font-family: var(--f-body); font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+/* Encabezado */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 16px; padding-block: 10px; flex-wrap: wrap; }
+.brand { font-family: var(--f-display); font-weight: 800; font-size: 1.2rem; color: var(--leaf); text-decoration: none; margin-right: auto; }
+.top nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.top nav a { text-decoration: none; color: var(--ink); font-size: .88rem; padding: 4px 10px; border-radius: 999px; }
+.top nav a:hover { background: var(--leaf-soft); }
+
+/* Portada */
+.hero { padding-block: 48px 40px; }
+.hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; }
+.hero h1 { font-size: clamp(2.6rem, 7vw, 4.4rem); font-weight: 800; color: var(--leaf); letter-spacing: -.01em; }
+.hero h1 span { color: var(--honey); display: block; }
+.hero .lead { font-size: 1.15rem; margin-top: 14px; max-width: 46ch; }
+.hero .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: .82rem; font-weight: 400; padding: 4px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+.hero svg { width: 100%; max-width: 340px; height: auto; justify-self: center; }
+.name-box { margin-top: 24px; display: grid; gap: 6px; max-width: 360px; }
+.name-box label { font-weight: 600; font-size: .95rem; }
+
+section.block { padding-block: 44px; border-top: 1px solid var(--line); }
+section.block > .wrap { display: grid; gap: 22px; }
+
+/* Mapa de fases */
+.phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.phase { border-radius: var(--r); padding: 16px; display: grid; gap: 6px; align-content: start; text-decoration: none; color: var(--ink); border: 1px solid transparent; }
+.phase:hover { border-color: currentColor; }
+.phase .tag { font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+.phase b { font-family: var(--f-display); font-size: 1.15rem; line-height: 1.2; }
+.phase small { font-size: .82rem; color: var(--muted); }
+.phase .status { font-size: .78rem; font-weight: 600; }
+.t-water { background: var(--water-soft); } .t-water .tag, .t-water .k { color: var(--water); }
+.t-honey { background: var(--honey-soft); } .t-honey .tag, .t-honey .k { color: var(--honey); }
+.t-leaf { background: var(--leaf-soft); } .t-leaf .tag, .t-leaf .k { color: var(--leaf); }
+.t-soil { background: var(--soil-soft); } .t-soil .tag, .t-soil .k { color: var(--soil); }
+
+/* Actividades */
+.activity { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+.act-head { padding: 22px 24px; display: grid; gap: 6px; }
+.act-head .row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.act-head .tag { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+.badge { font-size: .78rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; border: 1.5px solid var(--muted); color: var(--muted); white-space: nowrap; }
+.badge.done { border-color: var(--ok); color: var(--ok); }
+.act-body { padding: 24px; display: grid; gap: 22px; }
+.goal { font-size: .95rem; }
+.goal b { font-weight: 600; }
+
+.video { border-radius: var(--r); overflow: hidden; background: var(--ink); max-width: 100%; }
+.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; max-width: 100%; }
+.video-ph { aspect-ratio: 16 / 9; max-width: 100%; display: grid; place-items: center; text-align: center; padding: 20px; color: var(--bg); gap: 8px; }
+.video-ph .play { width: 64px; height: 64px; border-radius: 50%; border: 3px solid var(--bg); display: grid; place-items: center; margin-inline: auto; }
+.video-ph p { font-size: .9rem; opacity: .85; max-width: 40ch; }
+.video-link { font-size: .9rem; }
+
+.steps { display: grid; gap: 18px; counter-reset: q; }
+.q { display: grid; gap: 8px; }
+.q > label, .q > .ql { font-weight: 600; font-size: 1rem; }
+.q .hint { font-size: .86rem; color: var(--muted); }
+textarea, input[type="text"] {
+  width: 100%; font: inherit; font-weight: 300; color: var(--ink); background: var(--bg);
+  border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
+}
+textarea { min-height: 96px; resize: vertical; }
+textarea:focus, input[type="text"]:focus { border-color: var(--leaf); outline: none; box-shadow: 0 0 0 3px var(--leaf-soft); }
+.options { display: flex; flex-wrap: wrap; gap: 8px; }
+.opt { position: relative; }
+.opt input { position: absolute; opacity: 0; inset: 0; }
+.opt span { display: inline-block; padding: 7px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--bg); cursor: pointer; font-size: .95rem; }
+.opt input:checked + span { background: var(--leaf); border-color: var(--leaf); color: var(--surface); font-weight: 600; }
+.opt input:focus-visible + span { outline: 3px solid var(--honey); outline-offset: 2px; }
+
+.callout { border-radius: var(--r); padding: 16px 18px; display: grid; gap: 6px; font-size: .95rem; }
+
+/* Carta */
+.letter {
+  background: var(--paper); border: 1px solid var(--paper-line); border-radius: 6px;
+  padding: 28px clamp(18px, 4vw, 40px);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 33px, var(--paper-line) 33px 34px);
+  font-family: var(--f-hand); font-size: 1.15rem; line-height: 34px; display: grid; gap: 0;
+  max-width: 720px;
+}
+.letter p { margin-bottom: 34px; }
+.letter p:last-child { margin-bottom: 0; }
+.letter .head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 16px; font-weight: 700; }
+.stamp { font-family: var(--f-body); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--warn); border: 2px solid var(--warn); padding: 0 8px; border-radius: 4px; line-height: 1.8; transform: rotate(-3deg); align-self: center; }
+
+/* Cadena de consecuencias */
+.chain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-items: stretch; }
+.chain .link { display: grid; gap: 6px; align-content: start; background: var(--bg); border-radius: 10px; padding: 12px; border: 1px dashed var(--line); }
+.chain .link b { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.chain .first { background: var(--honey-soft); border-style: solid; border-color: transparent; font-weight: 600; }
+.chain textarea { min-height: 72px; background: var(--surface); }
+
+/* Conceptos */
+.concepts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.concept { background: var(--bg); border-radius: 12px; padding: 16px; display: grid; gap: 6px; align-content: start; }
+.concept h4 { color: var(--honey); }
+.concept p { font-size: .92rem; }
+
+/* Quiz */
+.quiz { display: grid; gap: 16px; }
+.quiz fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+.quiz legend { font-weight: 600; margin-bottom: 8px; padding: 0; }
+.feedback { font-size: .9rem; min-height: 1.4em; }
+.feedback.ok { color: var(--ok); } .feedback.no { color: var(--warn); }
+
+/* Terrario: checklist y capas */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.two > * { min-width: 0; }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.checklist label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; font-size: .95rem; }
+.checklist input { width: 20px; height: 20px; accent-color: var(--leaf); margin-top: 3px; flex: none; }
+.layers { display: grid; gap: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+.layers div { padding: 10px 14px; font-size: .9rem; display: flex; justify-content: space-between; gap: 10px; }
+.layers div span:last-child { color: var(--muted); font-size: .82rem; text-align: right; }
+.l1 { background: var(--leaf-soft); } .l2 { background: var(--soil-soft); } .l3 { background: var(--bg); } .l4 { background: var(--water-soft); }
+
+/* Bitácora */
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+td input[type="text"] { min-width: 160px; }
+.rubric td, .rubric th { min-width: 150px; }
+.rubric th:first-child, .rubric td:first-child { min-width: 130px; font-weight: 600; }
+.rubric td { font-size: .88rem; }
+
+ol.how, ul.plain { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; }
+
+/* Barra de entrega */
+.deliver { background: var(--leaf); color: var(--surface); border-radius: 20px; padding: 26px; display: grid; gap: 14px; }
+.deliver p { max-width: 60ch; }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button {
+  font: inherit; font-weight: 600; border-radius: 999px; padding: 10px 20px; cursor: pointer;
+  border: 2px solid transparent;
+}
+.btn-main { background: var(--honey); color: #1D2A23; }
+.btn-ghost { background: transparent; color: inherit; border-color: currentColor; }
+.btn-small { padding: 6px 14px; font-size: .9rem; }
+.toast { font-size: .92rem; font-weight: 400; }
+.confirm { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+#copyArea { width: 100%; min-height: 160px; background: var(--surface); color: var(--ink); }
+
+footer { padding-block: 36px 56px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+footer .wrap { display: grid; gap: 6px; }
+
+@media (max-width: 820px) {
+  .hero .wrap, .two { grid-template-columns: 1fr; }
+  .hero svg { max-width: 240px; order: -1; }
+  .phases { grid-template-columns: 1fr 1fr; }
+  .concepts { grid-template-columns: 1fr 1fr; }
+  .chain { grid-template-columns: 1fr 1fr; }
+  .top nav { display: none; }
+}
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .phases, .concepts, .chain { grid-template-columns: 1fr; }
+  .act-head, .act-body { padding: 18px; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Guardianas del Ecosistema</a>
+    <nav aria-label="Secciones">
+      <a href="#introduccion">Introducción</a>
+      <a href="#tarea">Tarea</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#evaluacion">Evaluación</a>
+      <a href="#conclusion">Conclusión</a>
+      <a href="#docentes">Docentes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">WebQuest · Ciencias Naturales · 6.º de primaria</p>
+        <h1>Guardianas del <span>Ecosistema</span></h1>
+        <p class="lead">Un pueblo quiere eliminar a todas sus abejas. Antes de que lo haga, tú vas a investigar cómo funciona un ecosistema, darle un buen consejo y construir uno pequeñito con tus propias manos.</p>
+        <div class="meta">
+          <span class="chip">5 actividades</span>
+          <span class="chip">3 videos</span>
+          <span class="chip">1 carta por responder</span>
+          <span class="chip">1 terrario por construir</span>
+        </div>
+        <div class="name-box">
+          <label for="alumna">¿Cómo te llamas?</label>
+          <input type="text" id="alumna" data-save="alumna" placeholder="Escribe tu nombre y grupo" autocomplete="off">
+        </div>
+      </div>
+      <svg viewBox="0 0 300 330" role="img" aria-label="Dibujo de un terrario en un frasco con una abeja volando cerca">
+        <rect x="120" y="22" width="60" height="22" rx="5" fill="var(--soil)"/>
+        <path d="M110 44 h80 v22 c38 12 58 46 58 90 v120 c0 22 -16 34 -38 34 h-120 c-22 0 -38 -12 -38 -34 v-120 c0 -44 20 -78 58 -90z" fill="var(--water-soft)" stroke="var(--water)" stroke-width="4"/>
+        <path d="M54 268 h192 v8 c0 22 -16 34 -38 34 h-116 c-22 0 -38 -12 -38 -34z" fill="var(--muted)"/>
+        <rect x="54" y="252" width="192" height="16" fill="var(--ink)" opacity=".75"/>
+        <path d="M54 210 q48 -10 96 0 t96 0 v42 h-192z" fill="var(--soil)"/>
+        <path d="M150 210 c-2 -30 -4 -56 0 -80" stroke="var(--leaf)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="128" cy="168" rx="24" ry="11" fill="var(--leaf)" transform="rotate(-28 128 168)"/>
+        <ellipse cx="174" cy="150" rx="26" ry="11" fill="var(--leaf)" transform="rotate(24 174 150)"/>
+        <ellipse cx="136" cy="128" rx="18" ry="9" fill="var(--leaf)" transform="rotate(-40 136 128)"/>
+        <ellipse cx="96" cy="208" rx="22" ry="8" fill="var(--leaf)" opacity=".7"/>
+        <ellipse cx="206" cy="208" rx="20" ry="7" fill="var(--leaf)" opacity=".7"/>
+        <circle cx="160" cy="232" r="4" fill="var(--bg)" opacity=".5"/>
+        <circle cx="96" cy="240" r="3" fill="var(--bg)" opacity=".5"/>
+        <path d="M84 100 q-10 30 -4 70" stroke="var(--surface)" stroke-width="6" fill="none" stroke-linecap="round" opacity=".7"/>
+        <g transform="translate(236 70)">
+          <path d="M-40 26 q-14 -18 -2 -30 q10 -8 20 4" stroke="var(--muted)" stroke-width="2" stroke-dasharray="3 5" fill="none"/>
+          <ellipse cx="-4" cy="-12" rx="11" ry="8" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+          <ellipse cx="10" cy="-12" rx="9" ry="7" fill="var(--water-soft)" stroke="var(--water)" stroke-width="2"/>
+          <ellipse cx="0" cy="0" rx="18" ry="12" fill="var(--honey)"/>
+          <rect x="-6" y="-12" width="5" height="24" fill="var(--ink)"/>
+          <rect x="4" y="-11" width="5" height="22" fill="var(--ink)"/>
+          <circle cx="-15" cy="-2" r="2.2" fill="var(--ink)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- INTRODUCCIÓN -->
+  <section class="block" id="introduccion">
+    <div class="wrap">
+      <p class="eyebrow">Introducción</p>
+      <h2>Todo está conectado</h2>
+      <div class="prose">
+        <p>Mira a tu alrededor: el árbol del patio, la tierra de la maceta, los pájaros, el agua de la lluvia, ¡y tú! Todo forma parte de algo más grande llamado <strong>ecosistema</strong>.</p>
+        <p>En un ecosistema, los seres vivos dependen unos de otros y también del agua, la luz, el aire y el suelo. Cuando una pieza falta, las demás lo notan. A veces el cambio es pequeño; a veces todo el sistema se tambalea.</p>
+        <p>Hoy llegó una carta urgente de un pueblo que está a punto de tomar una decisión muy importante. Necesitan expertas. Necesitan <strong>guardianas del ecosistema</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAREA -->
+  <section class="block" id="tarea">
+    <div class="wrap">
+      <p class="eyebrow">La tarea</p>
+      <h2>Tu misión</h2>
+      <div class="prose">
+        <p>Al terminar esta WebQuest vas a entregar dos productos:</p>
+        <ul class="plain">
+          <li><strong>Una carta de respuesta</strong> para el pueblo de San Miguel de las Flores, donde les recomiendes qué hacer con sus abejas y les expliques por qué, usando lo que aprendiste sobre ecosistemas.</li>
+          <li><strong>Un terrario</strong>: primero lo diseñarás en papel y después lo construirás de verdad, para demostrar cómo funciona un ecosistema en miniatura.</li>
+        </ul>
+        <p>Tus respuestas se guardan solas en este navegador mientras escribes. Al final podrás copiarlas todas juntas para entregarlas a tu maestra o maestro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="block" id="proceso">
+    <div class="wrap">
+      <p class="eyebrow">El proceso</p>
+      <h2>Cuatro fases, cinco actividades</h2>
+      <p class="prose">Sigue las actividades en orden. Cada color indica un tipo de actividad distinto.</p>
+
+      <div class="phases">
+        <a class="phase t-water" href="#act1"><span class="tag">Exploración</span><b>El ecosistema en un vaso</b><small>Video y predicciones</small><span class="status k" data-status="1">Pendiente</span></a>
+        <a class="phase t-water" href="#act2"><span class="tag">Exploración</span><b>La carta del pueblo</b><small>Analiza un problema real</small><span class="status k" data-status="2">Pendiente</span></a>
+        <a class="phase t-honey" href="#act3"><span class="tag">Nuevos puntos de vista</span><b>¿Qué es un ecosistema?</b><small>Video explicativo y reto</small><span class="status k" data-status="3">Pendiente</span></a>
+        <a class="phase t-leaf" href="#act4"><span class="tag">Síntesis · Generalización</span><b>Responde y construye</b><small>Carta, diseño y terrario</small><span class="status k" data-status="45">Pendiente</span></a>
+      </div>
+
+      <!-- ACTIVIDAD 1 -->
+      <article class="activity" id="act1" data-act="1">
+        <div class="act-head t-water">
+          <div class="row"><span class="tag">Actividad 1 · Exploración</span><span class="badge" data-badge="1">Pendiente</span></div>
+          <h3>El ecosistema en un vaso</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> verás un experimento en el que encerramos un pequeño ecosistema dentro de un vaso y lo dejamos varios días. Antes de saber qué pasó, vas a hacer tus propias predicciones.</p>
+
+          <div class="q">
+            <label for="a1_pred">Antes de ver el video: ¿qué crees que va a pasar con las plantas y los seres vivos dentro del vaso?</label>
+            <span class="hint">No hay respuestas incorrectas. Escribe lo que de verdad piensas.</span>
+            <textarea id="a1_pred" data-save="a1_pred" data-req="1"></textarea>
+          </div>
+
+          <div class="video" data-video="experimento"></div>
+
+          <div class="steps">
+            <div class="q">
+              <span class="ql" id="a1_sobrevive_l">¿El ecosistema del vaso puede sobrevivir?</span>
+              <div class="options" role="radiogroup" aria-labelledby="a1_sobrevive_l">
+                <label class="opt"><input type="radio" name="a1_sobrevive" value="Sí" data-save="a1_sobrevive" data-req="1"><span>Sí</span></label>
+                <label class="opt"><input type="radio" name="a1_sobrevive" value="No" data-save="a1_sobrevive"><span>No</span></label>
+                <label class="opt"><input type="radio" name="a1_sobrevive" value="Solo por un tiempo" data-save="a1_sobrevive"><span>Solo por un tiempo</span></label>
+              </div>
+            </div>
+            <div class="q">
+              <label for="a1_porque">¿Por qué sí o por qué no?</label>
+              <span class="hint">Piensa: ¿de dónde sacan agua, aire, luz y alimento los seres vivos del vaso?</span>
+              <textarea id="a1_porque" data-save="a1_porque" data-req="1"></textarea>
+            </div>
+            <div class="q">
+              <label for="a1_cambio">¿Qué cambiarías del vaso para que el ecosistema dure más tiempo?</label>
+              <textarea id="a1_cambio" data-save="a1_cambio" data-req="1"></textarea>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACTIVIDAD 2 -->
+      <article class="activity" id="act2" data-act="2">
+        <div class="act-head t-water">
+          <div class="row"><span class="tag">Actividad 2 · Exploración</span><span class="badge" data-badge="2">Pendiente</span></div>
+          <h3>La carta del pueblo</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> leer con atención la carta que nos envió el pueblo de San Miguel de las Flores y darles tu primera recomendación.</p>
+
+          <div class="letter">
+            <div class="head"><span>San Miguel de las Flores, a 14 de octubre</span><span class="stamp">Urgente</span></div>
+            <p>Queridas alumnas de sexto grado:</p>
+            <p>Les escribimos porque en nuestro pueblo tenemos un problema. Este año llegaron muchas abejas. Hicieron un panal junto a la escuela y otro en el kiosco de la plaza. Varias personas se han quejado: dicen que les dan miedo, que no las dejan comer tranquilas en la plaza y a dos niños les picaron.</p>
+            <p>En la junta del pueblo, algunos vecinos propusieron fumigar todos los panales para deshacernos de las abejas de una vez. Otros dicen que no es buena idea, pero no saben explicar por qué.</p>
+            <p>En San Miguel vivimos de nuestras huertas de aguacate, calabaza y jitomate, y algunas familias venden miel en el mercado.</p>
+            <p>Nos dijeron que ustedes están aprendiendo sobre ecosistemas. ¿Qué nos recomiendan hacer? Tenemos que decidir pronto.</p>
+            <p>Atentamente,<br>Rosa Hernández<br>Presidenta municipal de San Miguel de las Flores</p>
+          </div>
+
+          <div class="q">
+            <span class="ql">Si las abejas desaparecen, ¿qué pasaría después? Completa la cadena.</span>
+            <span class="hint">Cada eslabón es una consecuencia de la anterior.</span>
+            <div class="chain">
+              <div class="link first"><b>Primero</b>Fumigan y desaparecen todas las abejas.</div>
+              <div class="link"><b>Entonces…</b><textarea id="a2_c1" data-save="a2_c1" data-req="2" aria-label="Primera consecuencia"></textarea></div>
+              <div class="link"><b>Después…</b><textarea id="a2_c2" data-save="a2_c2" data-req="2" aria-label="Segunda consecuencia"></textarea></div>
+              <div class="link"><b>Al final…</b><textarea id="a2_c3" data-save="a2_c3" data-req="2" aria-label="Tercera consecuencia"></textarea></div>
+            </div>
+          </div>
+
+          <div class="q">
+            <span class="ql" id="a2_conv_l">¿Le conviene al pueblo deshacerse de todas las abejas?</span>
+            <div class="options" role="radiogroup" aria-labelledby="a2_conv_l">
+              <label class="opt"><input type="radio" name="a2_conviene" value="Sí" data-save="a2_conviene" data-req="2"><span>Sí</span></label>
+              <label class="opt"><input type="radio" name="a2_conviene" value="No" data-save="a2_conviene"><span>No</span></label>
+              <label class="opt"><input type="radio" name="a2_conviene" value="No estoy segura" data-save="a2_conviene"><span>No estoy segura</span></label>
+            </div>
+          </div>
+
+          <div class="q">
+            <label for="a2_reco">¿Qué le recomendarías al pueblo? ¿Hay otra solución para quienes tienen miedo o se quejan?</label>
+            <textarea id="a2_reco" data-save="a2_reco" data-req="2"></textarea>
+          </div>
+
+          <div class="callout t-water">
+            <b class="k">Guarda esta respuesta</b>
+            <p>Más adelante vas a volver a ella. Cuando sepas más sobre ecosistemas, tal vez cambies de opinión o encuentres mejores razones.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACTIVIDAD 3 -->
+      <article class="activity" id="act3" data-act="3">
+        <div class="act-head t-honey">
+          <div class="row"><span class="tag">Actividad 3 · Nuevos puntos de vista</span><span class="badge" data-badge="3">Pendiente</span></div>
+          <h3>¿Qué es un ecosistema?</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> ver un video que explica qué es un ecosistema y cómo se relacionan sus partes. Después pondrás a prueba lo que aprendiste.</p>
+
+          <div class="video" data-video="concepto"></div>
+
+          <div class="concepts">
+            <div class="concept"><h4>Ecosistema</h4><p>Lugar donde los seres vivos conviven entre sí y con el ambiente: agua, luz, aire, suelo y temperatura.</p></div>
+            <div class="concept"><h4>Factores bióticos</h4><p>Todo lo que tiene vida: plantas, animales, hongos y bacterias.</p></div>
+            <div class="concept"><h4>Factores abióticos</h4><p>Lo que no tiene vida pero es necesario: agua, luz del sol, aire, rocas, suelo, temperatura.</p></div>
+            <div class="concept"><h4>Cadena alimentaria</h4><p>Muestra quién se alimenta de quién: productores (plantas), consumidores (animales) y descomponedores (hongos y bacterias).</p></div>
+            <div class="concept"><h4>Polinización</h4><p>Las abejas llevan el polen de flor en flor. Así las plantas forman frutos y semillas, como la calabaza o el aguacate.</p></div>
+            <div class="concept"><h4>Equilibrio</h4><p>Cuando una especie desaparece o crece demasiado, cambia todo el ecosistema. Cada ser vivo cumple una función.</p></div>
+          </div>
+
+          <div class="callout t-honey">
+            <b class="k">¿Sabías que…?</b>
+            <p>En México viven cientos de especies de abejas nativas. Algunas, como la <strong>abeja melipona</strong> (en maya, <em>xunáan kaab</em>), no tienen aguijón y se crían desde la época de los antiguos mayas por su miel.</p>
+          </div>
+
+          <div class="q">
+            <span class="ql">Reto rápido: elige la respuesta correcta</span>
+            <div class="quiz" id="quiz"></div>
+          </div>
+
+          <div class="q">
+            <label for="a3_vaso">Regresa al experimento del vaso. Con lo que aprendiste, explica qué necesitaba ese ecosistema para sobrevivir.</label>
+            <textarea id="a3_vaso" data-save="a3_vaso" data-req="3"></textarea>
+          </div>
+          <div class="q">
+            <label for="a3_abejas">¿Qué función cumplen las abejas en el ecosistema de San Miguel de las Flores?</label>
+            <textarea id="a3_abejas" data-save="a3_abejas" data-req="3"></textarea>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACTIVIDAD 4 -->
+      <article class="activity" id="act4" data-act="4">
+        <div class="act-head t-leaf">
+          <div class="row"><span class="tag">Actividad 4 · Síntesis</span><span class="badge" data-badge="4">Pendiente</span></div>
+          <h3>Responde al pueblo y diseña tu terrario</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> escribir tu carta de respuesta a San Miguel de las Flores y diseñar en papel un terrario que muestre cómo funciona un ecosistema.</p>
+
+          <h4>Parte A · Tu carta de respuesta</h4>
+          <div class="callout t-leaf">
+            <b class="k">Tu carta debe incluir</b>
+            <ul class="plain">
+              <li>Un saludo a la presidenta municipal y al pueblo.</li>
+              <li>Tu recomendación: ¿qué deben hacer con las abejas?</li>
+              <li>Al menos dos razones que usen palabras como <em>ecosistema</em>, <em>polinización</em>, <em>cadena alimentaria</em> o <em>equilibrio</em>.</li>
+              <li>Una idea para que las personas que tienen miedo estén más seguras sin dañar a las abejas.</li>
+              <li>Una despedida y tu firma.</li>
+            </ul>
+          </div>
+          <div class="q">
+            <label for="a4_carta">Escribe tu carta</label>
+            <textarea id="a4_carta" data-save="a4_carta" data-req="4" style="min-height:240px" placeholder="Estimada presidenta municipal Rosa Hernández y habitantes de San Miguel de las Flores:"></textarea>
+          </div>
+
+          <h4>Parte B · Diseña tu terrario en papel</h4>
+          <div class="two">
+            <div class="q">
+              <span class="ql">En una hoja, dibuja tu terrario. Marca cada elemento que incluyas:</span>
+              <ul class="checklist">
+                <li><label><input type="checkbox" data-save="a4_k1" data-req="4"> Un recipiente transparente (frasco, botella o pecera) y su tapa</label></li>
+                <li><label><input type="checkbox" data-save="a4_k2" data-req="4"> Las capas de abajo hacia arriba, cada una con su nombre</label></li>
+                <li><label><input type="checkbox" data-save="a4_k3" data-req="4"> Las plantas que vas a usar</label></li>
+                <li><label><input type="checkbox" data-save="a4_k4" data-req="4"> Los factores bióticos señalados en un color</label></li>
+                <li><label><input type="checkbox" data-save="a4_k5" data-req="4"> Los factores abióticos señalados en otro color</label></li>
+                <li><label><input type="checkbox" data-save="a4_k6" data-req="4"> Flechas que muestren el ciclo del agua dentro del frasco</label></li>
+                <li><label><input type="checkbox" data-save="a4_k7" data-req="4"> La lista de materiales que vas a necesitar</label></li>
+              </ul>
+            </div>
+            <div class="q">
+              <span class="ql">Capas de un terrario (de arriba hacia abajo)</span>
+              <div class="layers">
+                <div class="l1"><span>Plantas y musgo</span><span>Productores</span></div>
+                <div class="l2"><span>Tierra para macetas</span><span>Nutrientes</span></div>
+                <div class="l3"><span>Carbón activado (opcional)</span><span>Evita malos olores</span></div>
+                <div class="l4"><span>Piedras o grava</span><span>Drenaje del agua</span></div>
+              </div>
+              <span class="hint">Usa plantas pequeñas a las que les guste la humedad: musgo, helechos pequeños, peperomias o fitonias.</span>
+            </div>
+          </div>
+          <div class="q">
+            <label for="a4_explica">Explica tu diseño: ¿cómo van a obtener tus plantas agua, luz y aire dentro del terrario?</label>
+            <textarea id="a4_explica" data-save="a4_explica" data-req="4"></textarea>
+          </div>
+          <div class="q">
+            <label for="a4_relacion">¿En qué se parece tu terrario al ecosistema de San Miguel de las Flores? ¿Qué le falta?</label>
+            <span class="hint">Pista: ¿hay polinizadores en tu terrario? ¿Tus plantas necesitan dar flores y frutos?</span>
+            <textarea id="a4_relacion" data-save="a4_relacion" data-req="4"></textarea>
+          </div>
+        </div>
+      </article>
+
+      <!-- ACTIVIDAD 5 -->
+      <article class="activity" id="act5" data-act="5">
+        <div class="act-head t-soil">
+          <div class="row"><span class="tag">Actividad 5 · Generalización</span><span class="badge" data-badge="5">Pendiente</span></div>
+          <h3>¡Construye tu terrario!</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> seguir el video tutorial para convertir tu diseño de papel en un terrario real, y observarlo durante varios días.</p>
+
+          <div class="video" data-video="tutorial"></div>
+
+          <div class="two">
+            <div class="q">
+              <span class="ql">Materiales</span>
+              <ul class="plain">
+                <li>Frasco de vidrio limpio con tapa</li>
+                <li>Piedras pequeñas o grava</li>
+                <li>Carbón activado (opcional)</li>
+                <li>Tierra para macetas</li>
+                <li>Plantas pequeñas y musgo</li>
+                <li>Atomizador con agua</li>
+                <li>Cuchara larga o palito para acomodar</li>
+              </ul>
+            </div>
+            <div class="q">
+              <span class="ql">Pasos</span>
+              <ol class="how">
+                <li>Coloca una capa de piedras de unos 2 cm.</li>
+                <li>Agrega una capa delgada de carbón.</li>
+                <li>Pon tierra hasta llenar un tercio del frasco.</li>
+                <li>Haz hoyitos y planta con cuidado.</li>
+                <li>Cubre los espacios con musgo.</li>
+                <li>Rocía agua, sin encharcar, y cierra el frasco.</li>
+                <li>Déjalo cerca de una ventana, sin sol directo.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="q">
+            <span class="ql">Bitácora de observación</span>
+            <span class="hint">Observa tu terrario durante una semana. ¿Ves gotitas en las paredes? ¿Cambian las plantas?</span>
+            <div class="table-scroll">
+              <table>
+                <thead><tr><th>Día</th><th>¿Qué observé?</th></tr></thead>
+                <tbody id="bitacora"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="q">
+            <label for="a5_cambios">¿Tu terrario funcionó como lo diseñaste? ¿Qué cambiaste al construirlo y por qué?</label>
+            <textarea id="a5_cambios" data-save="a5_cambios" data-req="5"></textarea>
+          </div>
+          <div class="q">
+            <label for="a5_aprendi">Mira tu primera respuesta a la carta del pueblo. ¿Cambiaste de opinión? ¿Qué aprendiste sobre cuidar los ecosistemas?</label>
+            <textarea id="a5_aprendi" data-save="a5_aprendi" data-req="5"></textarea>
+          </div>
+        </div>
+      </article>
+
+      <div class="deliver" id="entregar">
+        <h3>Entrega tu trabajo</h3>
+        <p>Tus respuestas se guardaron en este navegador. Cuando termines, cópialas todas juntas y pégalas en el documento o la plataforma que te indique tu maestra o maestro. No olvides entregar también tu diseño en papel y una foto de tu terrario.</p>
+        <div class="btns">
+          <button type="button" class="btn-main" id="copyBtn">Copiar mis respuestas</button>
+          <button type="button" class="btn-ghost btn-small" id="clearBtn">Borrar todo</button>
+          <span class="toast" id="toast" role="status"></span>
+        </div>
+        <div class="confirm" id="confirmBox" hidden>
+          <span>¿Segura? Se borrarán todas tus respuestas.</span>
+          <button type="button" class="btn-main btn-small" id="confirmYes">Sí, borrar</button>
+          <button type="button" class="btn-ghost btn-small" id="confirmNo">Cancelar</button>
+        </div>
+        <textarea id="copyArea" readonly hidden aria-label="Tus respuestas"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVALUACIÓN -->
+  <section class="block" id="evaluacion">
+    <div class="wrap">
+      <p class="eyebrow">Evaluación</p>
+      <h2>¿Cómo se va a evaluar tu trabajo?</h2>
+      <p class="prose">Revisa esta rúbrica antes de entregar. Así sabes qué se espera de ti.</p>
+      <div class="table-scroll">
+        <table class="rubric">
+          <thead><tr><th>Criterio</th><th>Excelente (3)</th><th>Bien (2)</th><th>En proceso (1)</th></tr></thead>
+          <tbody>
+            <tr><td>Predicciones y exploración</td><td>Hace predicciones claras y explica sus razones con ejemplos.</td><td>Hace predicciones con alguna razón.</td><td>Hace predicciones sin explicar por qué.</td></tr>
+            <tr><td>Conceptos de ecosistema</td><td>Usa correctamente bióticos, abióticos, cadena alimentaria y polinización.</td><td>Usa algunos conceptos con pequeños errores.</td><td>Menciona los conceptos sin explicarlos.</td></tr>
+            <tr><td>Carta al pueblo</td><td>Da una recomendación clara, dos o más razones científicas y una alternativa segura.</td><td>Da una recomendación con una razón.</td><td>Da una opinión sin razones.</td></tr>
+            <tr><td>Diseño del terrario</td><td>Incluye todas las capas, etiqueta bióticos y abióticos y dibuja el ciclo del agua.</td><td>Incluye la mayoría de los elementos.</td><td>El dibujo está incompleto o sin etiquetas.</td></tr>
+            <tr><td>Construcción y bitácora</td><td>Construye el terrario siguiendo su diseño y registra observaciones todos los días.</td><td>Construye el terrario y registra algunas observaciones.</td><td>Construye el terrario sin registrar observaciones.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSIÓN -->
+  <section class="block" id="conclusion">
+    <div class="wrap">
+      <p class="eyebrow">Conclusión</p>
+      <h2>Ahora eres guardiana del ecosistema</h2>
+      <div class="prose">
+        <p>Empezaste con un vaso y una pregunta: ¿puede sobrevivir? Terminaste construyendo un ecosistema con tus propias manos y ayudando a un pueblo a tomar una mejor decisión.</p>
+        <p>Ahora sabes que ningún ser vivo está solo. Las abejas, las plantas, el agua, el suelo y las personas forman parte de la misma red. Cuidar a una de sus partes es cuidar a todas.</p>
+        <p>Sigue observando tu terrario. Y la próxima vez que veas una abeja, recuerda lo importante que es su trabajo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCENTES -->
+  <section class="block" id="docentes">
+    <div class="wrap">
+      <p class="eyebrow">Página para docentes</p>
+      <h2>Información para la maestra o el maestro</h2>
+      <div class="two">
+        <div class="prose">
+          <h4>Datos generales</h4>
+          <ul class="plain">
+            <li><strong>Grado:</strong> 6.º de primaria (Fase 5)</li>
+            <li><strong>Campo formativo:</strong> Saberes y Pensamiento Científico</li>
+            <li><strong>Ejes articuladores:</strong> Pensamiento crítico; Vida saludable</li>
+            <li><strong>Tema:</strong> Ecosistemas, interacciones entre seres vivos y su entorno, y la importancia de los polinizadores</li>
+            <li><strong>Duración sugerida:</strong> 5 sesiones de 50 minutos, más una semana de observación del terrario</li>
+          </ul>
+        </div>
+        <div class="prose">
+          <h4>Secuencia didáctica</h4>
+          <ul class="plain">
+            <li><strong>Exploración:</strong> el experimento del vaso y la carta del pueblo activan ideas previas sin dar respuestas.</li>
+            <li><strong>Introducción de nuevos puntos de vista:</strong> el video explicativo presenta los conceptos científicos.</li>
+            <li><strong>Síntesis:</strong> las alumnas aplican los conceptos al responder la carta y diseñar el terrario.</li>
+            <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable.</li>
+          </ul>
+          <p>La carta de San Miguel de las Flores y la presidenta municipal son ficticias, creadas para esta actividad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Guardianas del Ecosistema</strong> · WebQuest elaborada para la materia de Comunicación Educativa, Universidad Pedagógica Nacional.</p>
+    <p>Autoras: <span id="autoras">[escribe aquí los nombres del equipo]</span></p>
+  </div>
+</footer>
+
+<script>
+/* ===== CONFIGURACIÓN: pega aquí los enlaces de tus videos de YouTube ===== */
+const VIDEOS = {
+  experimento: "",  // Actividad 1: el ecosistema en un vaso
+  concepto: "",     // Actividad 3: video explicativo del concepto
+  tutorial: ""      // Actividad 5: tutorial para hacer el terrario
+};
+const VIDEO_TEXT = {
+  experimento: "Video del experimento: dejamos un ecosistema dentro de un vaso durante varios días.",
+  concepto: "Video explicativo: ¿qué es un ecosistema y cómo se relacionan sus partes?",
+  tutorial: "Video tutorial: cómo construir el terrario que diseñaste en papel."
+};
+/* ======================================================================== */
+
+const KEY = "guardianas-ecosistema-v1";
+let data = {};
+try { data = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { data = {}; }
+function persist() { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {} }
+
+function youtubeId(url) {
+  const m = String(url).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
+  return m ? m[1] : null;
+}
+document.querySelectorAll("[data-video]").forEach(box => {
+  const k = box.dataset.video, url = VIDEOS[k], id = url && youtubeId(url);
+  if (id) {
+    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '" title="' + VIDEO_TEXT[k] + '" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    const p = document.createElement("p");
+    p.className = "video-link";
+    p.innerHTML = '¿No se ve el video? <a href="' + url + '" target="_blank" rel="noopener">Ábrelo en YouTube</a>.';
+    box.after(p);
+  } else {
+    box.innerHTML = '<div class="video-ph"><div><div class="play" aria-hidden="true"><svg width="22" height="24" viewBox="0 0 22 24"><path d="M2 2 L20 12 L2 22 Z" fill="currentColor"/></svg></div><p>' + VIDEO_TEXT[k] + '</p><p><small>Próximamente</small></p></div></div>';
+  }
+});
+
+/* Bitácora */
+const bit = document.getElementById("bitacora");
+for (let d = 1; d <= 7; d++) {
+  const tr = document.createElement("tr");
+  tr.innerHTML = '<td>Día ' + d + '</td><td><input type="text" id="a5_d' + d + '" data-save="a5_d' + d + '"' + (d <= 3 ? ' data-req="5"' : '') + ' aria-label="Observación del día ' + d + '"></td>';
+  bit.appendChild(tr);
+}
+
+/* Reto rápido */
+const QUIZ = [
+  { q: "¿Cuál de estos es un factor abiótico?", o: ["Un helecho", "La luz del sol", "Una abeja"], a: 1, why: "La luz no tiene vida, pero los seres vivos la necesitan." },
+  { q: "¿Qué hacen las abejas cuando visitan las flores?", o: ["Las dañan", "Las polinizan", "Se comen las hojas"], a: 1, why: "Llevan polen de flor en flor y así se forman frutos y semillas." },
+  { q: "En un terrario cerrado, ¿de dónde sale el agua que ves en las paredes del frasco?", o: ["De las plantas y la tierra, que la evaporan", "Entra por la tapa", "Aparece sola"], a: 0, why: "El agua se evapora, se condensa en el vidrio y vuelve a caer: es un pequeño ciclo del agua." },
+  { q: "Si desaparecen las abejas de un pueblo con huertas, ¿qué pasaría primero?", o: ["Habría más frutas", "Habría menos flores convertidas en frutos", "No pasaría nada"], a: 1, why: "Sin polinizadores, muchas flores no se convierten en frutos como la calabaza o el aguacate." },
+  { q: "¿Qué papel tienen las plantas en una cadena alimentaria?", o: ["Consumidoras", "Descomponedoras", "Productoras"], a: 2, why: "Las plantas producen su propio alimento con la luz del sol." }
+];
+const quiz = document.getElementById("quiz");
+QUIZ.forEach((item, i) => {
+  const fs = document.createElement("fieldset");
+  const name = "a3_q" + (i + 1);
+  fs.innerHTML = '<legend>' + (i + 1) + '. ' + item.q + '</legend><div class="options">' +
+    item.o.map((o, j) => '<label class="opt"><input type="radio" name="' + name + '" value="' + j + '" data-save="' + name + '"' + (j === 0 ? ' data-req="3"' : '') + '><span>' + o + '</span></label>').join("") +
+    '</div><p class="feedback" id="fb_' + name + '" aria-live="polite"></p>';
+  quiz.appendChild(fs);
+});
+function showFeedback(name) {
+  const i = Number(name.slice(4)) - 1, item = QUIZ[i], fb = document.getElementById("fb_" + name);
+  if (!fb) return;
+  if (data[name] === undefined || data[name] === "") { fb.textContent = ""; fb.className = "feedback"; return; }
+  const ok = Number(data[name]) === item.a;
+  fb.textContent = ok ? "¡Correcto! " + item.why : "Inténtalo de nuevo. Piensa en lo que viste en el video.";
+  fb.className = "feedback " + (ok ? "ok" : "no");
+}
+
+/* Guardar y restaurar */
+const fields = document.querySelectorAll("[data-save]");
+fields.forEach(el => {
+  const k = el.dataset.save;
+  if (el.type === "radio") el.checked = data[k] === el.value;
+  else if (el.type === "checkbox") el.checked = !!data[k];
+  else if (data[k] !== undefined) el.value = data[k];
+  el.addEventListener(el.type === "radio" || el.type === "checkbox" ? "change" : "input", () => {
+    if (el.type === "radio") data[k] = el.value;
+    else if (el.type === "checkbox") data[k] = el.checked;
+    else data[k] = el.value;
+    persist();
+    if (k.startsWith("a3_q")) showFeedback(k);
+    updateProgress();
+  });
+});
+QUIZ.forEach((_, i) => showFeedback("a3_q" + (i + 1)));
+
+function filled(k) { const v = data[k]; return v === true || (typeof v === "string" && v.trim() !== ""); }
+function actDone(n) {
+  const keys = new Set();
+  document.querySelectorAll('[data-req="' + n + '"]').forEach(el => keys.add(el.dataset.save));
+  return [...keys].every(filled);
+}
+function updateProgress() {
+  for (let n = 1; n <= 5; n++) {
+    const b = document.querySelector('[data-badge="' + n + '"]'), done = actDone(n);
+    b.textContent = done ? "Completa" : "Pendiente";
+    b.classList.toggle("done", done);
+  }
+  const map = { "1": [1], "2": [2], "3": [3], "45": [4, 5] };
+  document.querySelectorAll("[data-status]").forEach(s => {
+    const acts = map[s.dataset.status], count = acts.filter(actDone).length;
+    s.textContent = count === acts.length ? "✓ Completa" : (acts.length > 1 ? count + " de " + acts.length + " completas" : "Pendiente");
+  });
+}
+updateProgress();
+
+/* Entrega */
+function compile() {
+  const v = k => (data[k] === undefined || data[k] === "" ? "(sin responder)" : data[k]);
+  const L = [];
+  L.push("GUARDIANAS DEL ECOSISTEMA · WebQuest");
+  L.push("Nombre: " + v("alumna"), "");
+  L.push("ACTIVIDAD 1 · El ecosistema en un vaso");
+  L.push("Predicción: " + v("a1_pred"), "¿Puede sobrevivir?: " + v("a1_sobrevive"), "¿Por qué?: " + v("a1_porque"), "¿Qué cambiaría?: " + v("a1_cambio"), "");
+  L.push("ACTIVIDAD 2 · La carta del pueblo");
+  L.push("Cadena: Desaparecen las abejas → " + v("a2_c1") + " → " + v("a2_c2") + " → " + v("a2_c3"));
+  L.push("¿Conviene deshacerse de todas?: " + v("a2_conviene"), "Recomendación: " + v("a2_reco"), "");
+  L.push("ACTIVIDAD 3 · ¿Qué es un ecosistema?");
+  const correct = QUIZ.filter((q, i) => Number(data["a3_q" + (i + 1)]) === q.a && data["a3_q" + (i + 1)] !== undefined).length;
+  L.push("Reto rápido: " + correct + " de " + QUIZ.length + " correctas");
+  L.push("¿Qué necesitaba el vaso?: " + v("a3_vaso"), "Función de las abejas: " + v("a3_abejas"), "");
+  L.push("ACTIVIDAD 4 · Carta y diseño del terrario");
+  L.push("Carta:", v("a4_carta"));
+  const checks = [...document.querySelectorAll('.checklist input')].map(c => (c.checked ? "[x] " : "[ ] ") + c.parentElement.textContent.trim());
+  L.push("Elementos del diseño:", ...checks);
+  L.push("Explicación del diseño: " + v("a4_explica"), "Parecidos con San Miguel: " + v("a4_relacion"), "");
+  L.push("ACTIVIDAD 5 · Construcción del terrario");
+  for (let d = 1; d <= 7; d++) L.push("Día " + d + ": " + v("a5_d" + d));
+  L.push("¿Funcionó como lo diseñé?: " + v("a5_cambios"), "¿Qué aprendí?: " + v("a5_aprendi"));
+  return L.join("\n");
+}
+const toast = document.getElementById("toast"), area = document.getElementById("copyArea");
+document.getElementById("copyBtn").addEventListener("click", () => {
+  const text = compile();
+  area.value = text;
+  const fallback = () => { area.hidden = false; area.focus(); area.select(); toast.textContent = "Selecciona el texto de abajo y cópialo (Ctrl + C)."; };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => { area.hidden = true; toast.textContent = "¡Copiado! Ahora pégalo donde te indique tu maestra o maestro."; }).catch(fallback);
+  } else fallback();
+});
+const confirmBox = document.getElementById("confirmBox");
+document.getElementById("clearBtn").addEventListener("click", () => { confirmBox.hidden = false; });
+document.getElementById("confirmNo").addEventListener("click", () => { confirmBox.hidden = true; });
+document.getElementById("confirmYes").addEventListener("click", () => {
+  data = {}; persist();
+  fields.forEach(el => { if (el.type === "radio" || el.type === "checkbox") el.checked = false; else el.value = ""; });
+  QUIZ.forEach((_, i) => showFeedback("a3_q" + (i + 1)));
+  updateProgress(); confirmBox.hidden = true; area.hidden = true;
+  toast.textContent = "Se borraron tus respuestas.";
+});
+</script>
+</body>
+</html>
