@@ -95,7 +95,7 @@ section.block { padding-block: 44px; border-top: 1px solid var(--line); }
 section.block > .wrap { display: grid; gap: 22px; }
 
 /* Mapa de fases */
-.phases { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .phase { border-radius: var(--r); padding: 16px; display: grid; gap: 6px; align-content: start; text-decoration: none; color: var(--ink); border: 1px solid transparent; }
 .phase:hover { border-color: currentColor; }
 .phase .tag { font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
@@ -257,7 +257,7 @@ footer .wrap { display: grid; gap: 6px; }
         <h1>Guardianas del <span>Ecosistema</span></h1>
         <p class="lead">Un pueblo quiere eliminar a todas sus abejas. Antes de que lo haga, tú vas a investigar cómo funciona un ecosistema, darle un buen consejo y construir uno pequeñito con tus propias manos.</p>
         <div class="meta">
-          <span class="chip">5 actividades</span>
+          <span class="chip">6 actividades</span>
           <span class="chip">3 videos</span>
           <span class="chip">1 carta por responder</span>
           <span class="chip">1 terrario por construir</span>
@@ -328,14 +328,16 @@ footer .wrap { display: grid; gap: 6px; }
   <section class="block" id="proceso">
     <div class="wrap">
       <p class="eyebrow">El proceso</p>
-      <h2>Cuatro fases, cinco actividades</h2>
+      <h2>Cuatro fases, seis actividades</h2>
       <p class="prose">Sigue las actividades en orden. Cada color indica un tipo de actividad distinto.</p>
 
       <div class="phases">
         <a class="phase t-water" href="#act1"><span class="tag">Exploración</span><b>El ecosistema en un vaso</b><small>Video y predicciones</small><span class="status k" data-status="1">Pendiente</span></a>
         <a class="phase t-water" href="#act2"><span class="tag">Exploración</span><b>La carta del pueblo</b><small>Analiza un problema real</small><span class="status k" data-status="2">Pendiente</span></a>
         <a class="phase t-honey" href="#act3"><span class="tag">Nuevos puntos de vista</span><b>¿Qué es un ecosistema?</b><small>Video explicativo y reto</small><span class="status k" data-status="3">Pendiente</span></a>
-        <a class="phase t-leaf" href="#act4"><span class="tag">Síntesis · Generalización</span><b>Responde y construye</b><small>Carta, diseño y terrario</small><span class="status k" data-status="45">Pendiente</span></a>
+        <a class="phase t-leaf" href="#act4"><span class="tag">Síntesis</span><b>Responde al pueblo</b><small>Escribe tu carta</small><span class="status k" data-status="4">Pendiente</span></a>
+        <a class="phase t-leaf" href="#act5"><span class="tag">Síntesis</span><b>Diseña tu terrario</b><small>Dibújalo en papel</small><span class="status k" data-status="5">Pendiente</span></a>
+        <a class="phase t-soil" href="#act6"><span class="tag">Generalización</span><b>¡Construye tu terrario!</b><small>Video tutorial y bitácora</small><span class="status k" data-status="6">Pendiente</span></a>
       </div>
 
       <!-- ACTIVIDAD 1 -->
@@ -473,12 +475,11 @@ footer .wrap { display: grid; gap: 6px; }
       <article class="activity" id="act4" data-act="4">
         <div class="act-head t-leaf">
           <div class="row"><span class="tag">Actividad 4 · Síntesis</span><span class="badge" data-badge="4">Pendiente</span></div>
-          <h3>Responde al pueblo y diseña tu terrario</h3>
+          <h3>Responde al pueblo</h3>
         </div>
         <div class="act-body">
-          <p class="goal"><b>Lo que harás:</b> escribir tu carta de respuesta a San Miguel de las Flores y diseñar en papel un terrario que muestre cómo funciona un ecosistema.</p>
+          <p class="goal"><b>Lo que harás:</b> escribir tu carta de respuesta a San Miguel de las Flores con todo lo que aprendiste sobre ecosistemas.</p>
 
-          <h4>Parte A · Tu carta de respuesta</h4>
           <div class="callout t-leaf">
             <b class="k">Tu carta debe incluir</b>
             <ul class="plain">
@@ -493,19 +494,29 @@ footer .wrap { display: grid; gap: 6px; }
             <label for="a4_carta">Escribe tu carta</label>
             <textarea id="a4_carta" data-save="a4_carta" data-req="4" style="min-height:240px" placeholder="Estimada presidenta municipal Rosa Hernández y habitantes de San Miguel de las Flores:"></textarea>
           </div>
+        </div>
+      </article>
 
-          <h4>Parte B · Diseña tu terrario en papel</h4>
+      <!-- ACTIVIDAD 5 -->
+      <article class="activity" id="act5" data-act="5">
+        <div class="act-head t-leaf">
+          <div class="row"><span class="tag">Actividad 5 · Síntesis</span><span class="badge" data-badge="5">Pendiente</span></div>
+          <h3>Diseña tu terrario</h3>
+        </div>
+        <div class="act-body">
+          <p class="goal"><b>Lo que harás:</b> diseñar en papel un terrario que muestre cómo funciona un ecosistema.</p>
+
           <div class="two">
             <div class="q">
               <span class="ql">En una hoja, dibuja tu terrario. Marca cada elemento que incluyas:</span>
               <ul class="checklist">
-                <li><label><input type="checkbox" data-save="a4_k1" data-req="4"> Un recipiente transparente (frasco, botella o pecera) y su tapa</label></li>
-                <li><label><input type="checkbox" data-save="a4_k2" data-req="4"> Las capas de abajo hacia arriba, cada una con su nombre</label></li>
-                <li><label><input type="checkbox" data-save="a4_k3" data-req="4"> Las plantas que vas a usar</label></li>
-                <li><label><input type="checkbox" data-save="a4_k4" data-req="4"> Los factores bióticos señalados en un color</label></li>
-                <li><label><input type="checkbox" data-save="a4_k5" data-req="4"> Los factores abióticos señalados en otro color</label></li>
-                <li><label><input type="checkbox" data-save="a4_k6" data-req="4"> Flechas que muestren el ciclo del agua dentro del frasco</label></li>
-                <li><label><input type="checkbox" data-save="a4_k7" data-req="4"> La lista de materiales que vas a necesitar</label></li>
+                <li><label><input type="checkbox" data-save="a5_k1" data-req="5"> Un recipiente transparente (frasco, botella o pecera) y su tapa</label></li>
+                <li><label><input type="checkbox" data-save="a5_k2" data-req="5"> Las capas de abajo hacia arriba, cada una con su nombre</label></li>
+                <li><label><input type="checkbox" data-save="a5_k3" data-req="5"> Las plantas que vas a usar</label></li>
+                <li><label><input type="checkbox" data-save="a5_k4" data-req="5"> Los factores bióticos señalados en un color</label></li>
+                <li><label><input type="checkbox" data-save="a5_k5" data-req="5"> Los factores abióticos señalados en otro color</label></li>
+                <li><label><input type="checkbox" data-save="a5_k6" data-req="5"> Flechas que muestren el ciclo del agua dentro del frasco</label></li>
+                <li><label><input type="checkbox" data-save="a5_k7" data-req="5"> La lista de materiales que vas a necesitar</label></li>
               </ul>
             </div>
             <div class="q">
@@ -520,21 +531,21 @@ footer .wrap { display: grid; gap: 6px; }
             </div>
           </div>
           <div class="q">
-            <label for="a4_explica">Explica tu diseño: ¿cómo van a obtener tus plantas agua, luz y aire dentro del terrario?</label>
-            <textarea id="a4_explica" data-save="a4_explica" data-req="4"></textarea>
+            <label for="a5_explica">Explica tu diseño: ¿cómo van a obtener tus plantas agua, luz y aire dentro del terrario?</label>
+            <textarea id="a5_explica" data-save="a5_explica" data-req="5"></textarea>
           </div>
           <div class="q">
-            <label for="a4_relacion">¿En qué se parece tu terrario al ecosistema de San Miguel de las Flores? ¿Qué le falta?</label>
+            <label for="a5_relacion">¿En qué se parece tu terrario al ecosistema de San Miguel de las Flores? ¿Qué le falta?</label>
             <span class="hint">Pista: ¿hay polinizadores en tu terrario? ¿Tus plantas necesitan dar flores y frutos?</span>
-            <textarea id="a4_relacion" data-save="a4_relacion" data-req="4"></textarea>
+            <textarea id="a5_relacion" data-save="a5_relacion" data-req="5"></textarea>
           </div>
         </div>
       </article>
 
-      <!-- ACTIVIDAD 5 -->
-      <article class="activity" id="act5" data-act="5">
+      <!-- ACTIVIDAD 6 -->
+      <article class="activity" id="act6" data-act="6">
         <div class="act-head t-soil">
-          <div class="row"><span class="tag">Actividad 5 · Generalización</span><span class="badge" data-badge="5">Pendiente</span></div>
+          <div class="row"><span class="tag">Actividad 6 · Generalización</span><span class="badge" data-badge="6">Pendiente</span></div>
           <h3>¡Construye tu terrario!</h3>
         </div>
         <div class="act-body">
@@ -581,12 +592,12 @@ footer .wrap { display: grid; gap: 6px; }
           </div>
 
           <div class="q">
-            <label for="a5_cambios">¿Tu terrario funcionó como lo diseñaste? ¿Qué cambiaste al construirlo y por qué?</label>
-            <textarea id="a5_cambios" data-save="a5_cambios" data-req="5"></textarea>
+            <label for="a6_cambios">¿Tu terrario funcionó como lo diseñaste? ¿Qué cambiaste al construirlo y por qué?</label>
+            <textarea id="a6_cambios" data-save="a6_cambios" data-req="6"></textarea>
           </div>
           <div class="q">
-            <label for="a5_aprendi">Mira tu primera respuesta a la carta del pueblo. ¿Cambiaste de opinión? ¿Qué aprendiste sobre cuidar los ecosistemas?</label>
-            <textarea id="a5_aprendi" data-save="a5_aprendi" data-req="5"></textarea>
+            <label for="a6_aprendi">Mira tu primera respuesta a la carta del pueblo. ¿Cambiaste de opinión? ¿Qué aprendiste sobre cuidar los ecosistemas?</label>
+            <textarea id="a6_aprendi" data-save="a6_aprendi" data-req="6"></textarea>
           </div>
         </div>
       </article>
@@ -664,8 +675,8 @@ footer .wrap { display: grid; gap: 6px; }
           <ul class="plain">
             <li><strong>Exploración:</strong> el experimento del vaso y la carta del pueblo activan ideas previas sin dar respuestas.</li>
             <li><strong>Introducción de nuevos puntos de vista:</strong> el video explicativo presenta los conceptos científicos.</li>
-            <li><strong>Síntesis:</strong> las alumnas aplican los conceptos al responder la carta y diseñar el terrario.</li>
-            <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable.</li>
+            <li><strong>Síntesis:</strong> en dos actividades, el alumnado aplica los conceptos: primero responde la carta del pueblo (Actividad 4) y después diseña el terrario en papel (Actividad 5).</li>
+            <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable (Actividad 6).</li>
           </ul>
           <p>La carta de San Miguel de las Flores y la presidenta municipal son ficticias, creadas para esta actividad.</p>
         </div>
@@ -686,7 +697,7 @@ footer .wrap { display: grid; gap: 6px; }
 const VIDEOS = {
   experimento: "",  // Actividad 1: el ecosistema en un vaso
   concepto: "",     // Actividad 3: video explicativo del concepto
-  tutorial: ""      // Actividad 5: tutorial para hacer el terrario
+  tutorial: ""      // Actividad 6: tutorial para hacer el terrario
 };
 const VIDEO_TEXT = {
   experimento: "Video del experimento: dejamos un ecosistema dentro de un vaso durante varios días.",
@@ -695,7 +706,7 @@ const VIDEO_TEXT = {
 };
 /* ======================================================================== */
 
-const KEY = "guardianas-ecosistema-v1";
+const KEY = "guardianas-ecosistema-v2";
 let data = {};
 try { data = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { data = {}; }
 function persist() { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {} }
@@ -721,7 +732,7 @@ document.querySelectorAll("[data-video]").forEach(box => {
 const bit = document.getElementById("bitacora");
 for (let d = 1; d <= 7; d++) {
   const tr = document.createElement("tr");
-  tr.innerHTML = '<td>Día ' + d + '</td><td><input type="text" id="a5_d' + d + '" data-save="a5_d' + d + '"' + (d <= 3 ? ' data-req="5"' : '') + ' aria-label="Observación del día ' + d + '"></td>';
+  tr.innerHTML = '<td>Día ' + d + '</td><td><input type="text" id="a6_d' + d + '" data-save="a6_d' + d + '"' + (d <= 3 ? ' data-req="6"' : '') + ' aria-label="Observación del día ' + d + '"></td>';
   bit.appendChild(tr);
 }
 
@@ -776,15 +787,13 @@ function actDone(n) {
   return [...keys].every(filled);
 }
 function updateProgress() {
-  for (let n = 1; n <= 5; n++) {
+  for (let n = 1; n <= 6; n++) {
     const b = document.querySelector('[data-badge="' + n + '"]'), done = actDone(n);
     b.textContent = done ? "Completa" : "Pendiente";
     b.classList.toggle("done", done);
   }
-  const map = { "1": [1], "2": [2], "3": [3], "45": [4, 5] };
   document.querySelectorAll("[data-status]").forEach(s => {
-    const acts = map[s.dataset.status], count = acts.filter(actDone).length;
-    s.textContent = count === acts.length ? "✓ Completa" : (acts.length > 1 ? count + " de " + acts.length + " completas" : "Pendiente");
+    s.textContent = actDone(Number(s.dataset.status)) ? "✓ Completa" : "Pendiente";
   });
 }
 updateProgress();
@@ -804,14 +813,15 @@ function compile() {
   const correct = QUIZ.filter((q, i) => Number(data["a3_q" + (i + 1)]) === q.a && data["a3_q" + (i + 1)] !== undefined).length;
   L.push("Reto rápido: " + correct + " de " + QUIZ.length + " correctas");
   L.push("¿Qué necesitaba el vaso?: " + v("a3_vaso"), "Función de las abejas: " + v("a3_abejas"), "");
-  L.push("ACTIVIDAD 4 · Carta y diseño del terrario");
-  L.push("Carta:", v("a4_carta"));
+  L.push("ACTIVIDAD 4 · Responde al pueblo");
+  L.push("Carta:", v("a4_carta"), "");
+  L.push("ACTIVIDAD 5 · Diseña tu terrario");
   const checks = [...document.querySelectorAll('.checklist input')].map(c => (c.checked ? "[x] " : "[ ] ") + c.parentElement.textContent.trim());
   L.push("Elementos del diseño:", ...checks);
-  L.push("Explicación del diseño: " + v("a4_explica"), "Parecidos con San Miguel: " + v("a4_relacion"), "");
-  L.push("ACTIVIDAD 5 · Construcción del terrario");
-  for (let d = 1; d <= 7; d++) L.push("Día " + d + ": " + v("a5_d" + d));
-  L.push("¿Funcionó como lo diseñé?: " + v("a5_cambios"), "¿Qué aprendí?: " + v("a5_aprendi"));
+  L.push("Explicación del diseño: " + v("a5_explica"), "Parecidos con San Miguel: " + v("a5_relacion"), "");
+  L.push("ACTIVIDAD 6 · Construcción del terrario");
+  for (let d = 1; d <= 7; d++) L.push("Día " + d + ": " + v("a6_d" + d));
+  L.push("¿Funcionó como lo diseñé?: " + v("a6_cambios"), "¿Qué aprendí?: " + v("a6_aprendi"));
   return L.join("\n");
 }
 const toast = document.getElementById("toast"), area = document.getElementById("copyArea");
