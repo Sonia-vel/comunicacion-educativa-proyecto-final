@@ -1,9 +1,12 @@
 # Glosario
 
-**WebQuest**: La página "Guardianas del Ecosistema" que guía al alumnado por una secuencia de actividades sobre ecosistemas.
+**WebQuest**: La página "Guardianes del Ecosistema" que guía al alumnado por una secuencia de actividades sobre ecosistemas.
 
 **Alumnado**: El grupo mixto de sexto de primaria al que va dirigida la WebQuest. Se nombra con lenguaje inclusivo, nunca solo en femenino ni en masculino genérico.
 _Evitar_: alumnas, alumnos (como genérico)
+
+**Guardianes del Ecosistema**: El título de la WebQuest. Es la única excepción consciente a la regla de formas neutras: el equipo lo prefirió a las opciones neutras o desdobladas. No se usa "guardianes" para nombrar al alumnado dentro de la WebQuest.
+_Evitar_: Guardianas del Ecosistema
 
 **Fase**: Uno de los cuatro tipos de actividad de la secuencia didáctica: Exploración, Introducción de nuevos puntos de vista, Síntesis y Generalización. Una fase agrupa una o más actividades.
 _Evitar_: tipo de actividad, etapa
