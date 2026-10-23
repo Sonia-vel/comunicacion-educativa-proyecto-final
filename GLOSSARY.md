@@ -21,6 +21,9 @@ _Evitar_: tipo de actividad, etapa
 
 **Terrario**: El ecosistema en miniatura que el alumnado primero diseña (Síntesis) y después construye (Generalización).
 
+**Frasco del experimento**: Cada uno de los frascos cerrados que el equipo monta y graba para el Video 1, para comparar qué pasa con distintas combinaciones de seres vivos y condiciones. No lo construye el alumnado, a diferencia del terrario.
+_Evitar_: vaso, terrario (para estos frascos)
+
 **Ramona**: La rata, marioneta de guante, que aparece en los tres videos y en la WebQuest. Es una integrante de un ecosistema. En los videos dice en voz alta ideas previas del alumnado y el equipo las corrige frente a cámara; en la WebQuest da datos correctos por su cuenta. Nunca dice que el equipo le dio la respuesta.
 _Evitar_: la mascota, la rata (sin nombre)
 
