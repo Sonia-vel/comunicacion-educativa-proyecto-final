@@ -771,7 +771,7 @@ function youtubeId(url) {
 document.querySelectorAll("[data-video]").forEach(box => {
   const k = box.dataset.video, url = VIDEOS[k], id = url && youtubeId(url);
   if (id) {
-    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '" title="' + VIDEO_TEXT[k] + '" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '" title="' + VIDEO_TEXT[k] + '" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
     const p = document.createElement("p");
     p.className = "video-link";
     p.innerHTML = '¿No se ve el video? <a href="' + url + '" target="_blank" rel="noopener">Ábrelo en YouTube</a>.';
