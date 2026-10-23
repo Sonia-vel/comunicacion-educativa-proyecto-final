@@ -32,6 +32,7 @@
   --f-body: "Lexend", "Segoe UI", system-ui, sans-serif;
   --f-hand: "Kalam", "Comic Sans MS", cursive;
   --r: 14px;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -50,7 +51,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; } }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font-family: var(--f-body); font-size: 17px; line-height: 1.65; font-weight: 300;
@@ -175,6 +176,18 @@ textarea:focus, input[type="text"]:focus { border-color: var(--leaf); outline: n
 .quiz fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
 .quiz legend { font-weight: 600; margin-bottom: 8px; padding: 0; }
 .feedback { font-size: .9rem; min-height: 1.4em; }
+/* La retroalimentación entra solo después de la carga inicial */
+#quiz.ready .feedback > * {
+  transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out);
+  transform-origin: 22px 22px;
+  @starting-style { opacity: 0; transform: translateY(4px) scale(0.96); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #quiz.ready .feedback > * {
+    transition: opacity 150ms var(--ease-out);
+    @starting-style { opacity: 0; transform: none; }
+  }
+}
 
 /* Ramona: avatar con globo de texto (bienvenida, pistas y datos de rata) */
 .ramona { display: flex; gap: 12px; align-items: flex-start; max-width: 62ch; }
@@ -810,7 +823,7 @@ function showFeedback(name) {
   if (data[name] === undefined || data[name] === "") { fb.textContent = ""; fb.className = "feedback"; return; }
   const ok = Number(data[name]) === item.a;
   fb.className = "feedback " + (ok ? "ok" : "no");
-  if (ok) { fb.textContent = "¡Correcto! " + item.why; return; }
+  if (ok) { fb.innerHTML = '<p>¡Correcto! ' + item.why + '</p>'; return; }
   fb.innerHTML = '<div class="ramona mini"><span class="av"></span><div class="bubble"><b class="who">Pista de Ramona</b><p>' + item.hint + ' Inténtalo de nuevo.</p></div></div>';
   ramonaAvatar(fb.querySelector(".av"));
 }
@@ -832,6 +845,7 @@ fields.forEach(el => {
   });
 });
 QUIZ.forEach((_, i) => showFeedback("a3_q" + (i + 1)));
+quiz.classList.add("ready");
 
 function filled(k) { const v = data[k]; return v === true || (typeof v === "string" && v.trim() !== ""); }
 function actDone(n) {
