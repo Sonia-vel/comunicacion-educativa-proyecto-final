@@ -24,6 +24,9 @@ _Evitar_: tipo de actividad, etapa
 **Frasco del experimento**: Cada uno de los frascos cerrados que el equipo monta y graba para el Video 1, para comparar qué pasa con distintas combinaciones de seres vivos y condiciones. No lo construye el alumnado, a diferencia del terrario.
 _Evitar_: vaso, terrario (para estos frascos)
 
+**Indicador**: El líquido que cambia de color en los frascos del experimento según cuánto dióxido de carbono hay en el agua. Su escala de colores se muestra en la carta de color.
+_Evitar_: tinte, colorante
+
 **Red alimentaria**: El conjunto de relaciones de quién se alimenta de quién en un ecosistema, que se ramifica y se cierra en ciclos gracias a los descomponedores. Es el modelo de ecosistema que enseñan los videos y la WebQuest; una cadena es solo un tramo de la red.
 _Evitar_: cadena alimentaria (como modelo del ecosistema completo)
 
