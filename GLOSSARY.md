@@ -21,14 +21,16 @@ _Evitar_: tipo de actividad, etapa
 
 **Terrario**: El ecosistema en miniatura que el alumnado primero diseña (Síntesis) y después construye (Generalización).
 
-**Frasco del experimento**: Cada uno de los frascos cerrados que el equipo monta y graba para el Video 1, para comparar qué pasa con distintas combinaciones de seres vivos y condiciones. No lo construye el alumnado, a diferencia del terrario.
+**Frasco del experimento**: Cada uno de los siete frascos cerrados que el equipo monta y graba para el Video 1, para comparar qué pasa con los mismos seres vivos cuando cambia una condición (luz, agua). Incluye los de los discos de espinaca. No lo construye el alumnado, a diferencia del terrario.
 _Evitar_: vaso, terrario (para estos frascos)
 
-**Indicador**: El líquido que cambia de color en los frascos del experimento según cuánto dióxido de carbono hay en el agua. Su escala de colores se muestra en la carta de color.
-_Evitar_: tinte, colorante
+**Agua de cal**: El líquido transparente que se pone blanco y turbio cuando le llega dióxido de carbono, el gas que soltamos al respirar. Es la prueba de que las semillas respiran.
+_Evitar_: indicador, carta de color
 
 **Red alimentaria**: El conjunto de relaciones de quién se alimenta de quién en un ecosistema, que se ramifica y se cierra en ciclos gracias a los descomponedores. Es el modelo de ecosistema que enseñan los videos y la WebQuest; una cadena es solo un tramo de la red.
 _Evitar_: cadena alimentaria (como modelo del ecosistema completo)
+
+**Red de San Miguel**: La red alimentaria de San Miguel de las Flores, con las abejas, sus flores y frutos, las familias, las ratas, las lechuzas, el sol, el agua y los descomponedores. Ramona jala su hilo en el Video 2 y el alumnado la pone a prueba en la WebQuest quitando una parte. Lo que depende por completo de la parte quitada **se cae**; lo que pierde solo una parte de lo que necesita **se tambalea**; lo que deja de tener quien lo controle **crece demasiado**.
 
 **Ramona**: La rata, marioneta de guante, que aparece en los tres videos y en la WebQuest. Es una integrante de un ecosistema. En los videos dice en voz alta ideas previas del alumnado y el equipo las corrige frente a cámara; en la WebQuest da datos correctos por su cuenta. Nunca dice que el equipo le dio la respuesta.
 _Evitar_: la mascota, la rata (sin nombre)

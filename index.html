@@ -375,10 +375,10 @@ footer .wrap { display: grid; gap: 6px; }
           <h3>Los frascos del experimento</h3>
         </div>
         <div class="act-body">
-          <p class="goal"><b>Lo que harás:</b> verás un experimento en el que encerramos un pequeño ecosistema dentro de un vaso y lo dejamos varios días. Antes de saber qué pasó, vas a hacer tus propias predicciones.</p>
+          <p class="goal"><b>Lo que harás:</b> verás un experimento en el que queremos poner a prueba si la vida puede seguir en un frasco cerrado, aislado del exterior. Antes de saber qué pasó, vas a hacer tus propias predicciones.</p>
 
           <div class="q">
-            <label for="a1_pred">Antes de ver el video: ¿qué crees que va a pasar con las plantas y los seres vivos dentro del vaso?</label>
+            <label for="a1_pred">Antes de ver el video: ¿qué crees que va a pasar con las plantas y los seres vivos dentro de un frasco cerrado?</label>
             <span class="hint">No hay respuestas incorrectas. Escribe lo que de verdad piensas.</span>
             <textarea id="a1_pred" data-save="a1_pred" data-req="1"></textarea>
           </div>
@@ -387,7 +387,7 @@ footer .wrap { display: grid; gap: 6px; }
 
           <div class="steps">
             <div class="q">
-              <span class="ql" id="a1_sobrevive_l">¿El ecosistema del vaso puede sobrevivir?</span>
+              <span class="ql" id="a1_sobrevive_l">¿La vida dentro del frasco puede seguir?</span>
               <div class="options" role="radiogroup" aria-labelledby="a1_sobrevive_l">
                 <label class="opt"><input type="radio" name="a1_sobrevive" value="Sí" data-save="a1_sobrevive" data-req="1"><span>Sí</span></label>
                 <label class="opt"><input type="radio" name="a1_sobrevive" value="No" data-save="a1_sobrevive"><span>No</span></label>
@@ -396,11 +396,11 @@ footer .wrap { display: grid; gap: 6px; }
             </div>
             <div class="q">
               <label for="a1_porque">¿Por qué sí o por qué no?</label>
-              <span class="hint">Piensa: ¿de dónde sacan agua, aire, luz y alimento los seres vivos del vaso?</span>
+              <span class="hint">Piensa: ¿de dónde sacan agua, aire, luz y alimento los seres vivos del frasco?</span>
               <textarea id="a1_porque" data-save="a1_porque" data-req="1"></textarea>
             </div>
             <div class="q">
-              <label for="a1_cambio">¿Qué cambiarías del vaso para que el ecosistema dure más tiempo?</label>
+              <label for="a1_cambio">¿Qué cambiarías del frasco para que la vida siga más tiempo?</label>
               <textarea id="a1_cambio" data-save="a1_cambio" data-req="1"></textarea>
             </div>
           </div>
@@ -504,7 +504,7 @@ footer .wrap { display: grid; gap: 6px; }
           </div>
 
           <div class="q">
-            <label for="a3_vaso">Regresa al experimento del vaso. Con lo que aprendiste, explica qué necesitaba ese ecosistema para sobrevivir.</label>
+            <label for="a3_vaso">Regresa a los frascos del experimento. Con lo que aprendiste, explica qué necesita la vida para seguir en un frasco cerrado.</label>
             <textarea id="a3_vaso" data-save="a3_vaso" data-req="3"></textarea>
           </div>
           <div class="q">
@@ -699,7 +699,7 @@ footer .wrap { display: grid; gap: 6px; }
       <p class="eyebrow">Conclusión</p>
       <h2>Misión cumplida: ahora sabes cuidar un ecosistema</h2>
       <div class="prose">
-        <p>Empezaste con un vaso y una pregunta: ¿puede sobrevivir? Terminaste construyendo un ecosistema con tus propias manos y ayudando a un pueblo a tomar una mejor decisión.</p>
+        <p>Empezaste con unos frascos y una pregunta: ¿puede seguir la vida en un frasco cerrado? Terminaste construyendo un ecosistema con tus propias manos y ayudando a un pueblo a tomar una mejor decisión.</p>
         <p>Ahora sabes que ningún ser vivo está solo. Las abejas, las plantas, el agua, el suelo y las personas forman parte de la misma red. Cuidar a una de sus partes es cuidar a todas.</p>
         <p>Sigue observando tu terrario. Y la próxima vez que veas una abeja, recuerda lo importante que es su trabajo.</p>
       </div>
@@ -725,7 +725,7 @@ footer .wrap { display: grid; gap: 6px; }
         <div class="prose">
           <h4>Secuencia didáctica</h4>
           <ul class="plain">
-            <li><strong>Exploración:</strong> el experimento del vaso y la carta del pueblo activan ideas previas sin dar respuestas.</li>
+            <li><strong>Exploración:</strong> los frascos del experimento y la carta del pueblo activan ideas previas sin dar respuestas.</li>
             <li><strong>Introducción de nuevos puntos de vista:</strong> el video explicativo presenta los conceptos científicos.</li>
             <li><strong>Síntesis:</strong> en dos actividades, el alumnado aplica los conceptos: primero responde la carta del pueblo (Actividad 4) y después diseña el terrario en papel (Actividad 5).</li>
             <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable (Actividad 6).</li>
@@ -748,12 +748,12 @@ footer .wrap { display: grid; gap: 6px; }
 <script>
 /* ===== CONFIGURACIÓN: pega aquí los enlaces de tus videos de YouTube ===== */
 const VIDEOS = {
-  experimento: "",  // Actividad 1: el ecosistema en un vaso
+  experimento: "",  // Actividad 1: los frascos del experimento
   concepto: "",     // Actividad 3: video explicativo del concepto
   tutorial: ""      // Actividad 6: tutorial para hacer el terrario
 };
 const VIDEO_TEXT = {
-  experimento: "Video del experimento: dejamos un ecosistema dentro de un vaso durante varios días.",
+  experimento: "Video del experimento: ponemos a prueba si la vida puede seguir en frascos cerrados.",
   concepto: "Video explicativo: ¿qué es un ecosistema y cómo se relacionan sus partes?",
   tutorial: "Video tutorial: cómo construir el terrario que diseñaste en papel."
 };
@@ -872,14 +872,14 @@ function compile() {
   L.push("GUARDIANES DEL ECOSISTEMA · WebQuest");
   L.push("Nombre: " + v("alumna"), "");
   L.push("ACTIVIDAD 1 · Los frascos del experimento");
-  L.push("Predicción: " + v("a1_pred"), "¿Puede sobrevivir?: " + v("a1_sobrevive"), "¿Por qué?: " + v("a1_porque"), "¿Qué cambiaría?: " + v("a1_cambio"), "");
+  L.push("Predicción: " + v("a1_pred"), "¿La vida puede seguir?: " + v("a1_sobrevive"), "¿Por qué?: " + v("a1_porque"), "¿Qué cambiaría?: " + v("a1_cambio"), "");
   L.push("ACTIVIDAD 2 · La carta del pueblo");
   L.push("Cadena: Desaparecen las abejas → " + v("a2_c1") + " → " + v("a2_c2") + " → " + v("a2_c3"));
   L.push("¿Conviene deshacerse de todas?: " + v("a2_conviene"), "Recomendación: " + v("a2_reco"), "");
   L.push("ACTIVIDAD 3 · ¿Qué es un ecosistema?");
   const correct = QUIZ.filter((q, i) => Number(data["a3_q" + (i + 1)]) === q.a && data["a3_q" + (i + 1)] !== undefined).length;
   L.push("Reto rápido: " + correct + " de " + QUIZ.length + " correctas");
-  L.push("¿Qué necesitaba el vaso?: " + v("a3_vaso"), "Función de las abejas: " + v("a3_abejas"), "");
+  L.push("¿Qué necesita la vida en un frasco cerrado?: " + v("a3_vaso"), "Función de las abejas: " + v("a3_abejas"), "");
   L.push("ACTIVIDAD 4 · Responde al pueblo");
   L.push("Carta:", v("a4_carta"), "");
   L.push("ACTIVIDAD 5 · Diseña tu terrario");

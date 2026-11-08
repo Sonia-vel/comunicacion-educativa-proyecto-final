@@ -1,3 +1,7 @@
+---
+status: superseded by ADR-0002
+---
+
 # Jugo de col morada como indicador en lugar de azul de bromotimol
 
 El experimento del Video 1 se diseñó con azul de bromotimol, pero no lo tenemos, así que el indicador de los frascos del experimento y de la demostración del popote será jugo de col morada en agua purificada de garrafón: es gratis, se prepara en casa y no hace falta manejarlo con guantes ni lentes. Antes de grabar se prueba en casa con un frasco de semillas y uno de planta; si el cambio de color no se distingue a cámara, se usa un kit de pH para acuario que contenga azul de bromotimol, con frascos más chicos porque el kit trae poco líquido.
