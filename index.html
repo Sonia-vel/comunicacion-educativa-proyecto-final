@@ -130,6 +130,8 @@ section.block > .wrap { display: grid; gap: 22px; }
 .q { display: grid; gap: 8px; }
 .q > label, .q > .ql { font-weight: 600; font-size: 1rem; }
 .q .hint { font-size: .86rem; color: var(--muted); }
+.steps > .ql { font-weight: 600; color: var(--muted); }
+.steps > .hint { font-size: .86rem; color: var(--muted); }
 textarea, input[type="text"] {
   width: 100%; font: inherit; font-weight: 300; color: var(--ink); background: var(--bg);
   border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
@@ -375,10 +377,10 @@ footer .wrap { display: grid; gap: 6px; }
           <h3>Los frascos del experimento</h3>
         </div>
         <div class="act-body">
-          <p class="goal"><b>Lo que harás:</b> verás un experimento en el que queremos poner a prueba si la vida puede seguir en un frasco cerrado, aislado del exterior. Antes de saber qué pasó, vas a hacer tus propias predicciones.</p>
+          <p class="goal"><b>Lo que harás:</b> verás siete frascos con los que queremos poner a prueba si la vida puede seguir en un frasco cerrado. El video no explica qué pasó: tú predices, observas y te quedas con cuatro preguntas que responde el Video 2.</p>
 
           <div class="q">
-            <label for="a1_pred">Antes de ver el video: ¿qué crees que va a pasar con las plantas y los seres vivos dentro de un frasco cerrado?</label>
+            <label for="a1_pred">Antes de ver el video: ¿qué crees que va a pasar con los seres vivos dentro de un frasco cerrado?</label>
             <span class="hint">No hay respuestas incorrectas. Escribe lo que de verdad piensas.</span>
             <textarea id="a1_pred" data-save="a1_pred" data-req="1"></textarea>
           </div>
@@ -386,22 +388,52 @@ footer .wrap { display: grid; gap: 6px; }
           <div class="video" data-video="experimento"></div>
 
           <div class="steps">
+            <p class="ql">Cuando el video te pida pausarlo, anota tus predicciones:</p>
             <div class="q">
-              <span class="ql" id="a1_sobrevive_l">¿La vida dentro del frasco puede seguir?</span>
-              <div class="options" role="radiogroup" aria-labelledby="a1_sobrevive_l">
-                <label class="opt"><input type="radio" name="a1_sobrevive" value="Sí" data-save="a1_sobrevive" data-req="1"><span>Sí</span></label>
-                <label class="opt"><input type="radio" name="a1_sobrevive" value="No" data-save="a1_sobrevive"><span>No</span></label>
-                <label class="opt"><input type="radio" name="a1_sobrevive" value="Solo por un tiempo" data-save="a1_sobrevive"><span>Solo por un tiempo</span></label>
+              <span class="ql" id="a1_cal_l">¿Cambiará el agua de cal del frasco uno?</span>
+              <div class="options" role="radiogroup" aria-labelledby="a1_cal_l">
+                <label class="opt"><input type="radio" name="a1_cal" value="Sí" data-save="a1_cal" data-req="1"><span>Sí</span></label>
+                <label class="opt"><input type="radio" name="a1_cal" value="No" data-save="a1_cal"><span>No</span></label>
+                <label class="opt"><input type="radio" name="a1_cal" value="No sé" data-save="a1_cal"><span>No sé</span></label>
               </div>
             </div>
             <div class="q">
-              <label for="a1_porque">¿Por qué sí o por qué no?</label>
-              <span class="hint">Piensa: ¿de dónde sacan agua, aire, luz y alimento los seres vivos del frasco?</span>
-              <textarea id="a1_porque" data-save="a1_porque" data-req="1"></textarea>
+              <label for="a1_cal_porque">¿Por qué lo crees?</label>
+              <textarea id="a1_cal_porque" data-save="a1_cal_porque" data-req="1"></textarea>
             </div>
             <div class="q">
-              <label for="a1_cambio">¿Qué cambiarías del frasco para que la vida siga más tiempo?</label>
-              <textarea id="a1_cambio" data-save="a1_cambio" data-req="1"></textarea>
+              <span class="ql" id="a1_discos_l">¿Qué discos de espinaca van a subir?</span>
+              <div class="options" role="radiogroup" aria-labelledby="a1_discos_l">
+                <label class="opt"><input type="radio" name="a1_discos" value="Los del frasco 3 (a la luz)" data-save="a1_discos" data-req="1"><span>Los del frasco 3 (a la luz)</span></label>
+                <label class="opt"><input type="radio" name="a1_discos" value="Los del frasco 4 (a oscuras)" data-save="a1_discos"><span>Los del frasco 4 (a oscuras)</span></label>
+                <label class="opt"><input type="radio" name="a1_discos" value="Los dos" data-save="a1_discos"><span>Los dos</span></label>
+                <label class="opt"><input type="radio" name="a1_discos" value="Ninguno" data-save="a1_discos"><span>Ninguno</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps">
+            <p class="ql">Al terminar el video:</p>
+            <div class="q">
+              <label for="a1_compara">¿Se pareció lo que pasó a tus predicciones? ¿Qué te sorprendió?</label>
+              <textarea id="a1_compara" data-save="a1_compara" data-req="1"></textarea>
+            </div>
+            <p class="hint">Escribe tu mejor idea para cada pregunta del video, aunque todavía no sepas la respuesta. El Video 2 las explica.</p>
+            <div class="q">
+              <label for="a1_p1">1. ¿Por qué se puso blanca el agua de cal del frasco con semillas, y la del dos no?</label>
+              <textarea id="a1_p1" data-save="a1_p1" data-req="1"></textarea>
+            </div>
+            <div class="q">
+              <label for="a1_p2">2. ¿Por qué los discos subieron con luz y a oscuras no?</label>
+              <textarea id="a1_p2" data-save="a1_p2" data-req="1"></textarea>
+            </div>
+            <div class="q">
+              <label for="a1_p3">3. ¿Por qué en el frasco seco el pan casi no cambió?</label>
+              <textarea id="a1_p3" data-save="a1_p3" data-req="1"></textarea>
+            </div>
+            <div class="q">
+              <label for="a1_p4">4. ¿Por qué cambió distinto el frasco con cochinillas?</label>
+              <textarea id="a1_p4" data-save="a1_p4" data-req="1"></textarea>
             </div>
           </div>
 
@@ -682,7 +714,7 @@ footer .wrap { display: grid; gap: 6px; }
         <table class="rubric">
           <thead><tr><th>Criterio</th><th>Excelente (3)</th><th>Bien (2)</th><th>En proceso (1)</th></tr></thead>
           <tbody>
-            <tr><td>Predicciones y exploración</td><td>Hace predicciones claras y explica sus razones con ejemplos.</td><td>Hace predicciones con alguna razón.</td><td>Hace predicciones sin explicar por qué.</td></tr>
+            <tr><td>Predicciones y exploración</td><td>Hace predicciones claras, explica sus razones y las compara con lo que pasó en los frascos.</td><td>Hace predicciones con alguna razón.</td><td>Hace predicciones sin explicar por qué.</td></tr>
             <tr><td>Conceptos de ecosistema</td><td>Usa correctamente bióticos, abióticos, red alimentaria y polinización.</td><td>Usa algunos conceptos con pequeños errores.</td><td>Menciona los conceptos sin explicarlos.</td></tr>
             <tr><td>Carta al pueblo</td><td>Da una recomendación clara, dos o más razones científicas y una alternativa segura.</td><td>Da una recomendación con una razón.</td><td>Da una opinión sin razones.</td></tr>
             <tr><td>Diseño del terrario</td><td>Incluye todas las capas, etiqueta bióticos y abióticos y dibuja el ciclo del agua.</td><td>Incluye la mayoría de los elementos.</td><td>El dibujo está incompleto o sin etiquetas.</td></tr>
@@ -725,7 +757,7 @@ footer .wrap { display: grid; gap: 6px; }
         <div class="prose">
           <h4>Secuencia didáctica</h4>
           <ul class="plain">
-            <li><strong>Exploración:</strong> los frascos del experimento y la carta del pueblo activan ideas previas sin dar respuestas.</li>
+            <li><strong>Exploración:</strong> el Video 1 muestra siete frascos sin explicar los resultados; el alumnado predice en una pausa, compara y se queda con cuatro preguntas abiertas que responde el Video 2 (Actividad 3). Después, la carta del pueblo (Actividad 2). Ambas activan ideas previas sin dar respuestas.</li>
             <li><strong>Introducción de nuevos puntos de vista:</strong> el video explicativo presenta los conceptos científicos.</li>
             <li><strong>Síntesis:</strong> en dos actividades, el alumnado aplica los conceptos: primero responde la carta del pueblo (Actividad 4) y después diseña el terrario en papel (Actividad 5).</li>
             <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable (Actividad 6).</li>
@@ -753,7 +785,7 @@ const VIDEOS = {
   tutorial: ""      // Actividad 6: tutorial para hacer el terrario
 };
 const VIDEO_TEXT = {
-  experimento: "Video del experimento: ponemos a prueba si la vida puede seguir en frascos cerrados.",
+  experimento: "Video 1: siete frascos para poner a prueba si la vida puede seguir en un frasco cerrado.",
   concepto: "Video explicativo: ¿qué es un ecosistema y cómo se relacionan sus partes?",
   tutorial: "Video tutorial: cómo construir el terrario que diseñaste en papel."
 };
@@ -872,7 +904,10 @@ function compile() {
   L.push("GUARDIANES DEL ECOSISTEMA · WebQuest");
   L.push("Nombre: " + v("alumna"), "");
   L.push("ACTIVIDAD 1 · Los frascos del experimento");
-  L.push("Predicción: " + v("a1_pred"), "¿La vida puede seguir?: " + v("a1_sobrevive"), "¿Por qué?: " + v("a1_porque"), "¿Qué cambiaría?: " + v("a1_cambio"), "");
+  L.push("Predicción antes del video: " + v("a1_pred"));
+  L.push("¿Cambiará el agua de cal del frasco 1?: " + v("a1_cal") + ". ¿Por qué?: " + v("a1_cal_porque"), "¿Qué discos van a subir?: " + v("a1_discos"));
+  L.push("¿Se pareció a mis predicciones?: " + v("a1_compara"));
+  L.push("1. Agua de cal: " + v("a1_p1"), "2. Discos: " + v("a1_p2"), "3. Frasco seco: " + v("a1_p3"), "4. Cochinillas: " + v("a1_p4"), "");
   L.push("ACTIVIDAD 2 · La carta del pueblo");
   L.push("Cadena: Desaparecen las abejas → " + v("a2_c1") + " → " + v("a2_c2") + " → " + v("a2_c3"));
   L.push("¿Conviene deshacerse de todas?: " + v("a2_conviene"), "Recomendación: " + v("a2_reco"), "");
