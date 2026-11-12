@@ -173,6 +173,26 @@ textarea:focus, input[type="text"]:focus { border-color: var(--leaf); outline: n
 .concept h4 { color: var(--honey); }
 .concept p { font-size: .92rem; }
 
+/* Respuestas anteriores que se retoman */
+.eco { margin: 0; padding: 10px 14px 10px 32px; background: var(--bg); border-radius: 10px; font-size: .88rem; color: var(--muted); display: grid; gap: 4px; }
+p.eco { padding-left: 14px; }
+
+/* Red de San Miguel */
+.red { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.nodo { background: var(--bg); border-radius: 12px; padding: 12px; display: grid; gap: 6px; align-content: start; border: 1.5px solid transparent; font-size: .9rem; }
+.nodo h4 { font-size: 1.02rem; }
+.nodo .nec { color: var(--muted); font-size: .82rem; }
+.nodo select { font: inherit; font-size: .9rem; width: 100%; padding: 6px 8px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); }
+.nodo select:focus-visible { outline: 3px solid var(--honey); outline-offset: 1px; }
+.nodo.quitada { opacity: .6; border-style: dashed; border-color: var(--line); }
+.nodo.quitada h4 { text-decoration: line-through; }
+.nodo .res { font-weight: 600; }
+.nodo[data-res="cae"] { border-color: var(--warn); } .nodo[data-res="cae"] .res { color: var(--warn); }
+.nodo[data-res="tambalea"] { border-color: var(--honey); } .nodo[data-res="tambalea"] .res { color: var(--honey); }
+.nodo[data-res="crece"] { border-color: var(--water); } .nodo[data-res="crece"] .res { color: var(--water); }
+.nodo[data-res="sigue"] { border-color: var(--line); } .nodo[data-res="sigue"] .res { color: var(--leaf); }
+.red-msg { font-size: .92rem; }
+
 /* Quiz */
 .quiz { display: grid; gap: 16px; }
 .quiz fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -364,7 +384,7 @@ footer .wrap { display: grid; gap: 6px; }
       <div class="phases">
         <a class="phase t-water" href="#act1"><span class="tag">Exploración</span><b>Los frascos del experimento</b><small>Video y predicciones</small><span class="status k" data-status="1">Pendiente</span></a>
         <a class="phase t-water" href="#act2"><span class="tag">Exploración</span><b>La carta del pueblo</b><small>Analiza un problema real</small><span class="status k" data-status="2">Pendiente</span></a>
-        <a class="phase t-honey" href="#act3"><span class="tag">Nuevos puntos de vista</span><b>¿Qué es un ecosistema?</b><small>Video explicativo y reto</small><span class="status k" data-status="3">Pendiente</span></a>
+        <a class="phase t-honey" href="#act3"><span class="tag">Nuevos puntos de vista</span><b>¿Qué es un ecosistema?</b><small>Video 2, reto y red de San Miguel</small><span class="status k" data-status="3">Pendiente</span></a>
         <a class="phase t-leaf" href="#act4"><span class="tag">Síntesis</span><b>Responde al pueblo</b><small>Escribe tu carta</small><span class="status k" data-status="4">Pendiente</span></a>
         <a class="phase t-leaf" href="#act5"><span class="tag">Síntesis</span><b>Diseña tu terrario</b><small>Dibújalo en papel</small><span class="status k" data-status="5">Pendiente</span></a>
         <a class="phase t-soil" href="#act6"><span class="tag">Generalización</span><b>¡Construye tu terrario!</b><small>Video tutorial y bitácora</small><span class="status k" data-status="6">Pendiente</span></a>
@@ -507,17 +527,20 @@ footer .wrap { display: grid; gap: 6px; }
           <h3>¿Qué es un ecosistema?</h3>
         </div>
         <div class="act-body">
-          <p class="goal"><b>Lo que harás:</b> ver un video que explica qué es un ecosistema y cómo se relacionan sus partes. Después pondrás a prueba lo que aprendiste.</p>
+          <p class="goal"><b>Lo que harás:</b> ver el Video 2, que responde las cuatro preguntas de los frascos. Después pondrás a prueba lo que aprendiste con los frascos, con la red de San Miguel de las Flores y con tu cadena de la Actividad 2.</p>
 
           <div class="video" data-video="concepto"></div>
 
           <div class="concepts">
-            <div class="concept"><h4>Ecosistema</h4><p>Lugar donde los seres vivos conviven entre sí y con el ambiente: agua, luz, aire, suelo y temperatura.</p></div>
-            <div class="concept"><h4>Factores bióticos</h4><p>Todo lo que tiene vida: plantas, animales, hongos y bacterias.</p></div>
-            <div class="concept"><h4>Factores abióticos</h4><p>Lo que no tiene vida pero es necesario: agua, luz del sol, aire, rocas, suelo, temperatura.</p></div>
-            <div class="concept"><h4>Red alimentaria</h4><p>Muestra quién se alimenta de quién: productores (plantas), consumidores (animales) y descomponedores (hongos y bacterias). No es una sola línea: las relaciones se ramifican y, gracias a los descomponedores, la materia vuelve a empezar.</p></div>
+            <div class="concept"><h4>Respiración</h4><p>Todos los seres vivos respiran: toman oxígeno y sueltan dióxido de carbono. Las semillas también; por eso se puso blanca el agua de cal.</p></div>
+            <div class="concept"><h4>Fotosíntesis</h4><p>Con la luz, las plantas usan dióxido de carbono y agua para fabricar su alimento, y sueltan oxígeno: las burbujitas que hicieron subir los discos de espinaca.</p></div>
+            <div class="concept"><h4>Factores bióticos</h4><p>Todo lo que tiene vida: plantas, semillas, animales, hongos y bacterias.</p></div>
+            <div class="concept"><h4>Factores abióticos</h4><p>Lo que no tiene vida, pero cambia lo que hacen los seres vivos: luz, agua, aire, suelo y temperatura.</p></div>
+            <div class="concept"><h4>Ecosistema</h4><p>Seres vivos y lo que no tiene vida, relacionados entre sí. No importa cuántas cosas hay, sino cómo se relacionan.</p></div>
+            <div class="concept"><h4>Equilibrio</h4><p>Las semillas sueltan el dióxido de carbono que usa la planta, y la planta suelta el oxígeno que respiran las semillas. Si una parte cambia o desaparece, cambia toda la red.</p></div>
+            <div class="concept"><h4>Productores, consumidores y descomponedores</h4><p>Las plantas son productoras: fabrican su alimento. Quienes comen lo que otros producen son consumidores, como las cochinillas. Los hongos y las bacterias son descomponedores: deshacen los restos y necesitan agua.</p></div>
+            <div class="concept"><h4>Red alimentaria</h4><p>Muestra quién se alimenta de quién. No es una sola línea: se ramifica y se cierra, porque lo que dejan los descomponedores vuelve a la tierra y le sirve a la planta. La materia da vueltas y la energía viene del sol.</p></div>
             <div class="concept"><h4>Polinización</h4><p>Las abejas llevan el polen de flor en flor. Así las plantas forman frutos y semillas, como la calabaza o el aguacate.</p></div>
-            <div class="concept"><h4>Equilibrio</h4><p>Cuando una especie desaparece o crece demasiado, cambia todo el ecosistema. Cada ser vivo cumple una función.</p></div>
           </div>
 
           <div class="ramona">
@@ -536,11 +559,32 @@ footer .wrap { display: grid; gap: 6px; }
           </div>
 
           <div class="q">
-            <label for="a3_vaso">Regresa a los frascos del experimento. Con lo que aprendiste, explica qué necesita la vida para seguir en un frasco cerrado.</label>
+            <label for="a3_vaso">Regresa a tus cuatro respuestas de la Actividad 1. Elige una que hoy contestarías distinto y escríbela de nuevo con lo que aprendiste.</label>
+            <ol class="eco" id="eco_a1" aria-label="Tus respuestas de la Actividad 1"></ol>
             <textarea id="a3_vaso" data-save="a3_vaso" data-req="3"></textarea>
           </div>
+
           <div class="q">
-            <label for="a3_abejas">¿Qué función cumplen las abejas en el ecosistema de San Miguel de las Flores?</label>
+            <span class="ql" id="a3_parte_l">Pon a prueba la red de San Miguel: quita una parte</span>
+            <span class="hint">Elige qué parte quitar. Después, en cada tarjeta, predice qué le pasa: sigue igual, se cae (dependía por completo de lo que quitaste), se tambalea (pierde una parte de lo que necesita) o crece demasiado (ya no hay quien la controle). Al final, comprueba.</span>
+            <div class="options" role="radiogroup" aria-labelledby="a3_parte_l">
+              <label class="opt"><input type="radio" name="a3_parte" value="abejas" data-save="a3_parte" data-req="3"><span>Las abejas</span></label>
+              <label class="opt"><input type="radio" name="a3_parte" value="ratas" data-save="a3_parte"><span>Las ratas</span></label>
+              <label class="opt"><input type="radio" name="a3_parte" value="lechuzas" data-save="a3_parte"><span>Las lechuzas</span></label>
+              <label class="opt"><input type="radio" name="a3_parte" value="hongos" data-save="a3_parte"><span>Los hongos y las bacterias</span></label>
+            </div>
+            <div class="red" id="red"></div>
+            <input type="hidden" data-save="a3_check" data-req="3">
+            <div class="btns"><button type="button" class="btn-main" id="redBtn">Comprobar</button><span class="red-msg" id="redMsg" aria-live="polite"></span></div>
+          </div>
+          <div class="q">
+            <label for="a3_red">¿Qué pasó con la red? ¿Te sorprendió algo? Si quieres, quita otra parte y compara.</label>
+            <textarea id="a3_red" data-save="a3_red" data-req="3"></textarea>
+          </div>
+
+          <div class="q">
+            <label for="a3_abejas">Regresa a tu cadena de la Actividad 2. ¿Qué partes de la red le faltaron? Escribe qué más se mueve si quitan a las abejas.</label>
+            <p class="eco" id="eco_a2"></p>
             <textarea id="a3_abejas" data-save="a3_abejas" data-req="3"></textarea>
           </div>
         </div>
@@ -715,7 +759,7 @@ footer .wrap { display: grid; gap: 6px; }
           <thead><tr><th>Criterio</th><th>Excelente (3)</th><th>Bien (2)</th><th>En proceso (1)</th></tr></thead>
           <tbody>
             <tr><td>Predicciones y exploración</td><td>Hace predicciones claras, explica sus razones y las compara con lo que pasó en los frascos.</td><td>Hace predicciones con alguna razón.</td><td>Hace predicciones sin explicar por qué.</td></tr>
-            <tr><td>Conceptos de ecosistema</td><td>Usa correctamente bióticos, abióticos, red alimentaria y polinización.</td><td>Usa algunos conceptos con pequeños errores.</td><td>Menciona los conceptos sin explicarlos.</td></tr>
+            <tr><td>Conceptos de ecosistema</td><td>Usa correctamente respiración, fotosíntesis, bióticos, abióticos, red alimentaria y polinización para explicar los frascos y la red de San Miguel.</td><td>Usa algunos conceptos con pequeños errores.</td><td>Menciona los conceptos sin explicarlos.</td></tr>
             <tr><td>Carta al pueblo</td><td>Da una recomendación clara, dos o más razones científicas y una alternativa segura.</td><td>Da una recomendación con una razón.</td><td>Da una opinión sin razones.</td></tr>
             <tr><td>Diseño del terrario</td><td>Incluye todas las capas, etiqueta bióticos y abióticos y dibuja el ciclo del agua.</td><td>Incluye la mayoría de los elementos.</td><td>El dibujo está incompleto o sin etiquetas.</td></tr>
             <tr><td>Construcción y bitácora</td><td>Construye el terrario siguiendo su diseño y registra observaciones todos los días.</td><td>Construye el terrario y registra algunas observaciones.</td><td>Construye el terrario sin registrar observaciones.</td></tr>
@@ -758,7 +802,7 @@ footer .wrap { display: grid; gap: 6px; }
           <h4>Secuencia didáctica</h4>
           <ul class="plain">
             <li><strong>Exploración:</strong> el Video 1 muestra siete frascos sin explicar los resultados; el alumnado predice en una pausa, compara y se queda con cuatro preguntas abiertas que responde el Video 2 (Actividad 3). Después, la carta del pueblo (Actividad 2). Ambas activan ideas previas sin dar respuestas.</li>
-            <li><strong>Introducción de nuevos puntos de vista:</strong> el video explicativo presenta los conceptos científicos.</li>
+            <li><strong>Introducción de nuevos puntos de vista:</strong> el Video 2 responde las cuatro preguntas de los frascos con respiración, fotosíntesis, luz y descomponedores, y arma la red de San Miguel sin dar la recomendación. En la Actividad 3, el alumnado contesta de nuevo una respuesta de la Actividad 1, pone a prueba la red quitándole una parte (predice y comprueba) y convierte en red la cadena de la Actividad 2, que se queda como diagnóstico.</li>
             <li><strong>Síntesis:</strong> en dos actividades, el alumnado aplica los conceptos: primero responde la carta del pueblo (Actividad 4) y después diseña el terrario en papel (Actividad 5).</li>
             <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable (Actividad 6).</li>
           </ul>
@@ -781,12 +825,12 @@ footer .wrap { display: grid; gap: 6px; }
 /* ===== CONFIGURACIÓN: pega aquí los enlaces de tus videos de YouTube ===== */
 const VIDEOS = {
   experimento: "",  // Actividad 1: los frascos del experimento
-  concepto: "",     // Actividad 3: video explicativo del concepto
+  concepto: "",     // Actividad 3: Video 2, ¿por qué cambiaron los frascos?
   tutorial: ""      // Actividad 6: tutorial para hacer el terrario
 };
 const VIDEO_TEXT = {
   experimento: "Video 1: siete frascos para poner a prueba si la vida puede seguir en un frasco cerrado.",
-  concepto: "Video explicativo: ¿qué es un ecosistema y cómo se relacionan sus partes?",
+  concepto: "Video 2: ¿por qué cambiaron los frascos? Las respuestas a las cuatro preguntas y la red de San Miguel de las Flores.",
   tutorial: "Video tutorial: cómo construir el terrario que diseñaste en papel."
 };
 /* ======================================================================== */
@@ -834,11 +878,12 @@ for (let d = 1; d <= 7; d++) {
 
 /* Reto rápido */
 const QUIZ = [
-  { q: "¿Cuál de estos es un factor abiótico?", o: ["Un helecho", "La luz del sol", "Una abeja"], a: 1, why: "La luz no tiene vida, pero los seres vivos la necesitan.", hint: "¡Yo también me confundí! Hazte esta pregunta: ¿eso tiene vida o no?" },
-  { q: "¿Qué hacen las abejas cuando visitan las flores?", o: ["Las dañan", "Las polinizan", "Se comen las hojas"], a: 1, why: "Llevan polen de flor en flor y así se forman frutos y semillas.", hint: "Mmm… ¿qué llevan pegado en el cuerpo las abejas cuando salen de una flor? Revisa la tarjeta de polinización." },
-  { q: "En un terrario cerrado, ¿de dónde sale el agua que ves en las paredes del frasco?", o: ["De las plantas y la tierra, que la evaporan", "Entra por la tapa", "Aparece sola"], a: 0, why: "El agua se evapora, se condensa en el vidrio y vuelve a caer: es un pequeño ciclo del agua.", hint: "¿Y si esa agua nunca salió del frasco? Piensa en el espejo del baño después de bañarte con agua caliente." },
-  { q: "Si desaparecen las abejas de un pueblo con huertas, ¿qué pasaría primero?", o: ["Habría más frutas", "Habría menos flores convertidas en frutos", "No pasaría nada"], a: 1, why: "Sin polinizadores, muchas flores no se convierten en frutos como la calabaza o el aguacate.", hint: "Yo también creía que no pasaría nada… Pero piensa: ¿quién lleva el polen a las flores de la calabaza?" },
-  { q: "¿Qué papel tienen las plantas en una red alimentaria?", o: ["Consumidoras", "Descomponedoras", "Productoras"], a: 2, why: "Las plantas producen su propio alimento con la luz del sol.", hint: "¿Las plantas tienen que comerse a alguien para alimentarse? ¿O hacen su propia comida?" }
+  { q: "¿Por qué se puso blanca el agua de cal del frasco con semillas?", o: ["Porque las semillas respiran y sueltan dióxido de carbono", "Porque las semillas estaban dormidas", "Porque le entró luz al frasco"], a: 0, why: "Las semillas respiran, como todos los seres vivos, y el dióxido de carbono que sueltan pone blanca el agua de cal.", hint: "¡Yo también creía que estaban dormidas! ¿Qué pasó con el agua de cal cuando soplaron con el popote?" },
+  { q: "¿Qué hizo subir los discos de espinaca?", o: ["El aire que entró por la tapa", "Las burbujitas de oxígeno que suelta la hoja al hacer fotosíntesis", "Que los discos se secaron"], a: 1, why: "Con la luz, la hoja fabrica su alimento y suelta oxígeno: esas burbujitas los hacen flotar.", hint: "Mmm… ¿qué se pegaba a los discos antes de que subieran? Revisa la tarjeta de fotosíntesis." },
+  { q: "¿Cuál de estos es un factor abiótico?", o: ["Un disco de espinaca", "La luz del sol", "Una cochinilla"], a: 1, why: "La luz no tiene vida, pero cambia lo que hacen los seres vivos: a oscuras, los discos no subieron.", hint: "¡Yo también me confundí! Hazte esta pregunta: ¿eso tiene vida o no?" },
+  { q: "¿Por qué en el frasco seco el pan casi no cambió?", o: ["Porque nadie se lo comió", "Porque los hongos y las bacterias necesitan agua para deshacer los restos", "Porque el pan nunca se descompone"], a: 1, why: "Los descomponedores necesitan agua para trabajar. En el frasco seco casi no pudieron.", hint: "¿Qué fue lo único diferente entre el frasco seco y el húmedo? Revisa la tarjeta de los descomponedores." },
+  { q: "¿Qué papel tienen las plantas en una red alimentaria?", o: ["Consumidoras", "Descomponedoras", "Productoras"], a: 2, why: "Con la luz del sol, las plantas fabrican su propio alimento: hacen fotosíntesis.", hint: "¿Las plantas tienen que comerse a alguien para alimentarse? ¿O hacen su propia comida?" },
+  { q: "¿Qué hacen las abejas cuando visitan las flores?", o: ["Las dañan", "Las polinizan", "Se comen las hojas"], a: 1, why: "Llevan polen de flor en flor y así se forman frutos y semillas.", hint: "Mmm… ¿qué llevan pegado en el cuerpo las abejas cuando salen de una flor? Revisa la tarjeta de polinización." }
 ];
 const quiz = document.getElementById("quiz");
 QUIZ.forEach((item, i) => {
@@ -860,6 +905,119 @@ function showFeedback(name) {
   ramonaAvatar(fb.querySelector(".av"));
 }
 
+/* Red de San Miguel: t = lo necesita por completo, p = lo necesita en parte,
+   control = quien la controla al comérsela, comen = quien se la come */
+const RED = {
+  sol:      { n: "Sol", de: "el sol", nec: "No tiene vida: no depende de nadie.", t: [], p: [] },
+  agua:     { n: "Agua", de: "el agua", nec: "No tiene vida: no depende de nadie.", t: [], p: [] },
+  hongos:   { n: "Hongos y bacterias", de: "los hongos y las bacterias", nec: "Necesitan agua para deshacer los restos.", t: ["agua"], p: [] },
+  flores:   { n: "Flores de calabaza y aguacate", de: "las flores", nec: "Necesitan sol y agua. De la tierra toman una parte de lo que dejan los hongos y las bacterias.", t: ["sol", "agua"], p: ["hongos"] },
+  abejas:   { n: "Abejas", de: "las abejas", nec: "Comen el néctar y el polen de las flores.", t: ["flores"], p: [] },
+  frutos:   { n: "Calabazas y aguacates", de: "las calabazas y los aguacates", nec: "Salen de las flores, si las abejas las polinizan.", t: ["flores", "abejas"], p: [] },
+  miel:     { n: "Miel", de: "la miel", nec: "La hacen las abejas.", t: ["abejas"], p: [] },
+  familias: { n: "Familias y mercado", de: "las familias", nec: "Viven en parte de las calabazas y los aguacates, y en parte de la miel.", t: [], p: ["frutos", "miel"] },
+  semillas: { n: "Semillas", de: "las semillas", nec: "Están dentro de las calabazas y los aguacates. Las ratas se comen algunas.", t: ["frutos"], p: [], comen: "ratas" },
+  ratas:    { n: "Ratas", de: "las ratas", nec: "Comen semillas, entre otras cosas. Las lechuzas se las comen.", t: [], p: ["semillas"], control: "lechuzas" },
+  lechuzas: { n: "Lechuzas", de: "las lechuzas", nec: "Comen ratas.", t: ["ratas"], p: [] }
+};
+const ESTADO = { sigue: "Sigue igual", cae: "Se cae", tambalea: "Se tambalea", crece: "Crece demasiado" };
+const RANGO = { sigue: 0, tambalea: 1, crece: 2, cae: 3, quitada: 4 };
+function redResult(q) {
+  const s = {}, why = {};
+  for (const k in RED) s[k] = k === q ? "quitada" : "sigue";
+  const gone = m => s[m] === "quitada" || s[m] === "cae";
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const k in RED) {
+      if (k === q) continue;
+      const nd = RED[k];
+      let st = "sigue", r = "Sigue igual: no depende de lo que quitaste.";
+      const up = (ns, nr) => { if (RANGO[ns] > RANGO[st]) { st = ns; r = nr; } };
+      nd.t.forEach(m => {
+        if (gone(m)) up("cae", "Se cae: dependía por completo de " + RED[m].de + ".");
+        else if (s[m] === "tambalea") up("tambalea", "Se tambalea: le afecta lo que le pasó a " + RED[m].de + ".");
+      });
+      nd.p.forEach(m => {
+        if (gone(m) || s[m] === "tambalea") up("tambalea", "Se tambalea: pierde una parte de lo que necesita, por lo que le pasó a " + RED[m].de + ".");
+      });
+      if (nd.control && gone(nd.control)) up("crece", "Crece demasiado: ya no hay quien las controle, porque faltan " + RED[nd.control].de + ".");
+      if (nd.comen && s[nd.comen] === "crece") up("tambalea", "Se tambalea: ahora hay demasiadas " + RED[nd.comen].de.replace("las ", "") + " que se las comen.");
+      if (st !== s[k]) { s[k] = st; changed = true; }
+      why[k] = r;
+    }
+  }
+  return { s, why };
+}
+const redBox = document.getElementById("red"), redMsg = document.getElementById("redMsg");
+function renderRed() {
+  const q = data.a3_parte;
+  redBox.innerHTML = "";
+  for (const k in RED) {
+    const card = document.createElement("div");
+    card.className = "nodo" + (k === q ? " quitada" : "");
+    card.dataset.k = k;
+    card.innerHTML = "<h4>" + RED[k].n + "</h4><p class=\"nec\">" + RED[k].nec + "</p>";
+    if (k === q) card.insertAdjacentHTML("beforeend", "<p class=\"res\">La quitaste</p>");
+    else if (q) {
+      const sel = document.createElement("select");
+      sel.setAttribute("aria-label", "¿Qué le pasa a " + RED[k].n + "?");
+      sel.innerHTML = "<option value=\"\">¿Qué le pasa?</option>" + Object.keys(ESTADO).map(e => "<option value=\"" + e + "\">" + ESTADO[e] + "</option>").join("");
+      sel.value = data["a3_pred_" + k] || "";
+      sel.addEventListener("change", () => {
+        data["a3_pred_" + k] = sel.value;
+        if (data.a3_check) { delete data.a3_check; paintRed(null); }
+        persist(); updateProgress();
+      });
+      card.appendChild(sel);
+      card.insertAdjacentHTML("beforeend", "<p class=\"res\" aria-live=\"polite\"></p>");
+    }
+    redBox.appendChild(card);
+  }
+  redMsg.textContent = q ? "" : "Primero elige qué parte quitar.";
+  paintRed(q && data.a3_check === q ? redResult(q) : null);
+}
+function paintRed(res) {
+  let hits = 0, total = 0;
+  redBox.querySelectorAll(".nodo:not(.quitada)").forEach(card => {
+    const k = card.dataset.k, out = card.querySelector(".res");
+    if (!out) return;
+    if (!res) { card.removeAttribute("data-res"); out.textContent = ""; return; }
+    const ok = data["a3_pred_" + k] === res.s[k];
+    total++; if (ok) hits++;
+    card.dataset.res = res.s[k];
+    out.textContent = (ok ? "✓ " : "✗ ") + res.why[k];
+  });
+  if (res) redMsg.textContent = "Acertaste " + hits + " de " + total + ". Lee por qué en cada tarjeta.";
+  else if (data.a3_parte) redMsg.textContent = "";
+}
+function resetRed() {
+  Object.keys(data).forEach(k => { if (k.startsWith("a3_pred_")) delete data[k]; });
+  delete data.a3_check; persist(); renderRed();
+}
+document.getElementById("redBtn").addEventListener("click", () => {
+  const q = data.a3_parte;
+  if (!q) { redMsg.textContent = "Primero elige qué parte quitar."; return; }
+  const faltan = Object.keys(RED).filter(k => k !== q && !data["a3_pred_" + k]).length;
+  if (faltan) { redMsg.textContent = "Te falta predecir " + faltan + (faltan === 1 ? " tarjeta." : " tarjetas."); return; }
+  data.a3_check = q; persist();
+  paintRed(redResult(q)); updateProgress();
+});
+renderRed();
+
+/* Respuestas de las Actividades 1 y 2 que se retoman en la 3 */
+function echo() {
+  const t = k => (typeof data[k] === "string" && data[k].trim()) ? data[k].trim() : "(sin responder)";
+  const ol = document.getElementById("eco_a1");
+  ol.innerHTML = "";
+  ["Agua de cal", "Discos", "Frasco seco", "Cochinillas"].forEach((name, i) => {
+    const li = document.createElement("li");
+    li.textContent = name + ": " + t("a1_p" + (i + 1));
+    ol.appendChild(li);
+  });
+  document.getElementById("eco_a2").textContent = "Tu cadena: Fumigan y desaparecen las abejas → " + t("a2_c1") + " → " + t("a2_c2") + " → " + t("a2_c3");
+}
+
 /* Guardar y restaurar */
 const fields = document.querySelectorAll("[data-save]");
 fields.forEach(el => {
@@ -873,6 +1031,7 @@ fields.forEach(el => {
     else data[k] = el.value;
     persist();
     if (k.startsWith("a3_q")) showFeedback(k);
+    if (k === "a3_parte") resetRed();
     updateProgress();
   });
 });
@@ -886,6 +1045,7 @@ function actDone(n) {
   return [...keys].every(filled);
 }
 function updateProgress() {
+  echo();
   for (let n = 1; n <= 6; n++) {
     const b = document.querySelector('[data-badge="' + n + '"]'), done = actDone(n);
     b.textContent = done ? "Completa" : "Pendiente";
@@ -914,7 +1074,18 @@ function compile() {
   L.push("ACTIVIDAD 3 · ¿Qué es un ecosistema?");
   const correct = QUIZ.filter((q, i) => Number(data["a3_q" + (i + 1)]) === q.a && data["a3_q" + (i + 1)] !== undefined).length;
   L.push("Reto rápido: " + correct + " de " + QUIZ.length + " correctas");
-  L.push("¿Qué necesita la vida en un frasco cerrado?: " + v("a3_vaso"), "Función de las abejas: " + v("a3_abejas"), "");
+  L.push("Respuesta de la Actividad 1 que contesté de nuevo: " + v("a3_vaso"));
+  const q = data.a3_parte;
+  if (q) {
+    const res = data.a3_check === q ? redResult(q) : null;
+    const hits = res ? Object.keys(RED).filter(k => k !== q && data["a3_pred_" + k] === res.s[k]).length : 0;
+    L.push("Red de San Miguel: quité " + RED[q].de + ". " + (res ? "Acerté " + hits + " de " + (Object.keys(RED).length - 1) + "." : "Sin comprobar."));
+    Object.keys(RED).filter(k => k !== q).forEach(k => {
+      const p = data["a3_pred_" + k];
+      L.push("  " + RED[k].n + ": predije " + (p ? ESTADO[p].toLowerCase() : "(sin responder)") + (res ? "; pasó: " + ESTADO[res.s[k]].toLowerCase() : ""));
+    });
+  } else L.push("Red de San Miguel: (sin responder)");
+  L.push("¿Qué pasó con la red?: " + v("a3_red"), "Mi cadena de la Actividad 2, ahora como red: " + v("a3_abejas"), "");
   L.push("ACTIVIDAD 4 · Responde al pueblo");
   L.push("Carta:", v("a4_carta"), "");
   L.push("ACTIVIDAD 5 · Diseña tu terrario");
@@ -942,6 +1113,7 @@ document.getElementById("confirmYes").addEventListener("click", () => {
   data = {}; persist();
   fields.forEach(el => { if (el.type === "radio" || el.type === "checkbox") el.checked = false; else el.value = ""; });
   QUIZ.forEach((_, i) => showFeedback("a3_q" + (i + 1)));
+  renderRed();
   updateProgress(); confirmBox.hidden = true; area.hidden = true;
   toast.textContent = "Se borraron tus respuestas.";
 });
