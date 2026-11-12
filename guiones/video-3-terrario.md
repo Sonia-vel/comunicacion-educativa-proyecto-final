@@ -1,6 +1,6 @@
 # Guion. Video 3: ¡Construye tu terrario!
 
-> **Versión 3** (borrador, 8 nov 2026): las referencias a los frascos del experimento son las del experimento nuevo ([ADR 0002](../docs/adr/0002-agua-de-cal-y-discos-de-espinaca.md)), el terrario de muestra se arma el 9 nov y se graba en casa. Sonia sigue sin diálogo, Alexis construye las capas, Adonis explica más y los turnos son cortos y repartidos entre el equipo. Lo marcado con **[?]** queda pendiente. Los pasos y materiales son los de la Actividad 6 de la WebQuest; los conceptos que se aplican son los del [Guion del Video 2: Conceptos](https://github.com/Sonia-vel/comunicacion-educativa-proyecto-final/issues/11).
+> **Versión 3** (borrador, 8 nov 2026), con los frascos del experimento nuevo; el terrario de muestra se arma antes y se graba en casa.
 
 ## 1. Ficha de identificación
 
@@ -10,10 +10,10 @@
 | Serie | Guardianes del Ecosistema, video 3 de 3 |
 | Fase de la WebQuest | Generalización (Actividad 6) |
 | Tipo de video (estructura / función) | Tutorial / Aplicación o generalización |
-| Grado y campo formativo | 6.º de primaria, Saberes y Pensamiento Científico (NEM 2022) |
+| Grado y campo formativo | 6.º de primaria, Saberes y Pensamiento Científico (NEM 2022; SEP, 2024) |
 | Contenido | Ecosistemas: interacciones entre factores bióticos y abióticos, ciclo del agua y equilibrio en un ecosistema cerrado |
 | Objetivo del video | Al terminar el video, el alumnado podrá construir el terrario que diseñó en la Actividad 5, explicar para qué sirve cada capa y cada ser vivo según cómo se relacionan, y registrar en su bitácora cómo el agua y el aire dan vueltas dentro del frasco. |
-| Ideas previas que se corrigen | El ecosistema como lista de componentes: "entre más plantas y animales le meta, mejor terrario" (Ramona trae un diseño con todo, hasta una abeja). Causalidad lineal: "si lo cierran, se le acaba el agua y el aire". Las dice Ramona y el equipo las pone a prueba frente a cámara. |
+| Ideas previas que se corrigen | El ecosistema como lista de componentes: "entre más plantas y animales le meta, mejor terrario" (Ramona trae un diseño con todo, hasta una abeja). Causalidad lineal: "si lo cierran, se le acaba el agua y el aire". Las dice Ramona y el equipo las pone a prueba frente a cámara. Fuentes: Motta y Uyaban (2017); Martín del Pozo (2013). |
 | Idea clave para recordar | Un terrario funciona porque sus partes se relacionan: el agua, el aire y la materia dan vueltas dentro del frasco. |
 | Duración estimada | 6:00 (cuerpo 5:45 + créditos) |
 | Voces y personajes | Diana (conducción y construcción a cuadro, pasos 4 a 7) y Adonis (conducción con Ramona y explicación de los pasos); Alexis (construcción de las capas, pasos 1 a 3, y terrario de muestra, fila 13); Ramona (voz en vivo: Sonia). Sonia queda fuera de cuadro y sin diálogo todo el video. |
@@ -35,7 +35,7 @@
 - **Manejo gestual:** tono de tutorial, tranquilo y paso por paso, con pausas para que el alumnado haga lo mismo. Cada paso abre con su número y nombre en pantalla. Las manos de Alexis y de Diana se graban en cenital, sin prisa; la cámara secundaria toma a Adonis y Ramona reaccionando. Con Ramona, el equipo toma en serio su diseño: le pregunta, no se burla.
 - **Seguridad:** el carbón activado se vierte despacio, sin soplar el polvo; guantes para la tierra y lavarse las manos al terminar; el frasco de vidrio lo maneja una persona adulta o con cuidado sobre la mesa. Las cochinillas se toman con cuidado del jardín, pocas, y se regresan si el terrario se desarma. En pantalla, al inicio: "Pide ayuda a una persona adulta".
 
-## 3. Estándares de la serie (iguales en los 3 videos)
+## 3. Estándares de la serie
 
 - **Entrada:** cortinilla de 6 s con el logotipo de la UPN, "Guardianes del Ecosistema" y el título del video. Adonis escoge la canción de la serie y hace las animaciones.
 - **Aparición de Ramona:** efecto corto y siempre igual (un chillido de rata) cuando entra a cuadro. Solo marca su entrada.
@@ -63,7 +63,7 @@ Las acotaciones técnicas van entre paréntesis; el texto hablado se escribe tal
 | 13 | 4:40–5:20 | Desarrollo: días después | (Tarjeta: El terrario de muestra, días después. Fotos diarias del terrario de Alexis en la misma toma, día 1 / día 3 / día 7 **[los días que se tengan]**; acercamiento a las gotitas en el vidrio. Animación sencilla: flechas de la tierra y las plantas al vidrio (evaporación), gotitas (condensación) y de vuelta a la tierra. Alexis, Diana, Adonis y Ramona junto al terrario de muestra) | ALEXIS: Este terrario lo armamos hace unos días y no lo hemos abierto ni regado.<br>RAMONA: ¡Tiene gotitas en las paredes! ¡Está lloviendo adentro!<br>ALEXIS: El agua de la tierra y de las plantas se evapora y se junta en el vidrio en gotitas: eso es la condensación.<br>DIANA: Y luego vuelve a caer. Es un ciclo del agua en miniatura.<br>ADONIS: Y con el aire pasa lo que vimos en el Video 2: lo que sueltan unos al respirar, lo usan otros con la luz.<br>RAMONA: Entonces el agua no se acaba: ¡da vueltas! Por eso no hay que regarlo todos los días. | (Silencio de 3 s en el acercamiento a las gotitas) |
 | 14 | 5:20–5:45 | Cierre: la bitácora y lo que le falta | (Plano medio de Diana, Adonis y Ramona con los dos terrarios. Texto: Observa tu terrario una semana y anota en tu bitácora) | DIANA: Ahora te toca a ti. Observa tu terrario durante una semana y anota en tu bitácora: ¿ves gotitas? ¿Cambian las plantas?<br>ADONIS: Y piensa: tu terrario no tiene abejas ni flores que den frutos. ¿Qué le falta para parecerse a San Miguel de las Flores? | (Música baja) |
 | 15 | 5:45–6:00 | Cierre: idea clave y despedida | (Texto en pantalla: Un terrario funciona porque sus partes se relacionan: el agua, el aire y la materia dan vueltas dentro del frasco. Después, tres pasos con íconos: 1. Llena tu bitácora. 2. Responde la Actividad 6. 3. Vuelve a leer tu carta al pueblo) | DIANA: Un terrario funciona porque sus partes se relacionan. Llena tu bitácora, responde la Actividad seis y vuelve a leer tu carta al pueblo.<br>RAMONA: ¡Gracias por cuidar los ecosistemas conmigo! Y la próxima vez que vean una abeja, acuérdense de todo lo que hace. ¡Nos vemos! | (Chillido de Ramona; música de la serie sube) |
-| 16 | 6:00–6:15 | Créditos | (Créditos: guion, conducción, voz de Ramona, cámara, edición, música, referencias APA. Logotipo UPN) | — | (Cortinilla de salida) |
+| 16 | 6:00–6:15 | Créditos | (Créditos: guion, conducción, voz de Ramona, cámara, edición, música, fuentes de los experimentos y datos con autor y año; la lista completa va en la descripción del video. Logotipo UPN) | — | (Cortinilla de salida) |
 
 ### Comprobaciones antes de grabar
 
@@ -82,4 +82,22 @@ Las acotaciones técnicas van entre paréntesis; el texto hablado se escribe tal
 
 ## 5. Referencias (APA)
 
-**[?]** Se completan junto con las referencias de la página para docentes y cuando Adonis elija la música: la fuente de los pasos y capas del terrario cerrado, la del ciclo del agua (evaporación y condensación) y la de las cochinillas de humedad como descomponedoras de hojarasca (dato de rata de la fila 10, el mismo de la WebQuest).
+### Fundamento
+
+- Ley Quiñónez, C. P. (2025). ODS 15. Vida de ecosistemas terrestres. En A. Santamaría Miranda & M. de los Á. Cervantes Rosas (Eds.), *Objetivos de Desarrollo Sostenible* (pp. 287–303). Ediciones Comunicación Científica. https://doi.org/10.52501/cc.359.15
+- Martín del Pozo, R. (Coord.). (2013). *Las ideas «científicas» de los alumnos y alumnas de Primaria: Tareas, dibujos y textos*. Universidad Complutense de Madrid.
+- Motta Montiel, K. A., & Uyaban Sandoval, A. del P. (2017). Caracterización de ideas previas sobre el concepto de ecosistema en estudiantes del grupo 505 del Colegio Minuto de Dios, ubicado en Ciudad Verde, Soacha-Cundinamarca. *Bio-grafía: Escritos sobre la Biología y su Enseñanza*, *10*(18), 42–52. https://doi.org/10.17227/20271034.vol.10num.18bio-grafia42.52
+- Reynoso Díaz, A., Zepeda Ortega, I. E., & Rodríguez Maldonado, R. (2019). *Podcast educativo: Planeación, análisis, diseño, desarrollo y evaluación*. Universidad Nacional Autónoma de México, Escuela Nacional Colegio de Ciencias y Humanidades.
+- Secretaría de Educación Pública. (2024). *Programa de estudio para la educación primaria: Programa sintético de la Fase 5*. https://educacionbasica.sep.gob.mx/wp-content/uploads/2024/08/6.pdf
+- Suárez Carrasco, L., & Vallín Gallegos, A. (2017). *Cómo elaborar videos educativos*. Universidad de Guadalajara, Sistema de Universidad Virtual.
+
+### Experimentos y datos
+
+- Generation Genius. (s.f.). *Terrario DIY*. https://www.generationgenius.com/es/activities/terrario-diy/
+- KhanAcademyEspañol. (2017, 29 de enero). *El ciclo del agua | Ecología | Biología* [Video]. YouTube. https://www.youtube.com/watch?v=FIFvGQUGn8g
+- Maderey Rascón, L. E. (2025). *Principios de hidrogeografía: Estudio del ciclo hidrológico* (Textos Universitarios, núm. 1). Instituto de Geografía, Universidad Nacional Autónoma de México. https://doi.org/10.14350/gsxxi.tu.01
+- Museum of Science. (2025, 8 de junio). *DIY terrarium: Make a mini ecosystem* [Video]. https://www.mos.org/video/diy-terrarium-make-mini-ecosystem
+- Peralta, M., de Araujo, P. B., & Isa-Miranda, Á. V. (2026). Bicho bolita *Armadillidium vulgare*. *Universo Tucumano*, (113). Fundación Miguel Lillo. https://www.lillo.org.ar/editorial/index.php/publicaciones/catalog/download/549/615/201?inline=1
+- Secretaría de Educación Pública. (2025a, 6 de febrero). *Ciclo del agua en una botella*. Nueva Escuela Mexicana Digital. https://nuevaescuelamexicana.sep.gob.mx/detalle-ficha/2961
+- Secretaría de Educación Pública. (2025b, 6 de febrero). *La descomposición de los alimentos*. Nueva Escuela Mexicana Digital. https://nuevaescuelamexicana.sep.gob.mx/contenido/coleccion/la-descomposicion-de-los-alimentos/
+- U.S. Geological Survey. (2019, 12 de octubre). *El ciclo del agua*. Water Science School. https://www.usgs.gov/water-science-school/science/el-ciclo-del-agua-water-cycle-spanish
