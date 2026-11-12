@@ -36,3 +36,6 @@ _Evitar_: cadena alimentaria (como modelo del ecosistema completo)
 _Evitar_: la mascota, la rata (sin nombre)
 
 **Dato de rata**: Un dato curioso y verificado sobre las relaciones de un ecosistema que comparte Ramona y que cierra con "y ese es un dato de rata".
+
+**Ecosistema cercano**: Un ecosistema real que el alumnado observa en sus alrededores (un patio, una maceta, un árbol de la calle, un pilar con pájaros o plantas; la ciudad también cuenta) como tarea para casa entre la Actividad 3 y la 4. Busca relaciones, no una lista de componentes. No es una actividad numerada y no se califica.
+_Evitar_: Actividad 7
