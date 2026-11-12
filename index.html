@@ -226,6 +226,9 @@ p.eco { padding-left: 14px; }
 /* Terrario: checklist y capas */
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .two > * { min-width: 0; }
+.refs { margin-top: 32px; display: grid; gap: 14px; max-width: 80ch; }
+.refs ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.refs li { padding-left: 2em; text-indent: -2em; font-size: .9rem; overflow-wrap: anywhere; }
 .checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .checklist label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; font-size: .95rem; }
 .checklist input { width: 20px; height: 20px; accent-color: var(--leaf); margin-top: 3px; flex: none; }
@@ -457,11 +460,11 @@ footer .wrap { display: grid; gap: 6px; }
             </div>
           </div>
 
-          <!-- Datos de rata: verificar cada fuente antes de entregar.
-               Exploración: dispersión de semillas por roedores que las entierran (Vander Wall, 2010, Phil. Trans. R. Soc. B).
-               Nuevos puntos de vista: dieta de la lechuza de campanario (Cornell Lab, All About Birds, "Barn Owl").
-               Síntesis: murciélago magueyero, polinizador del agave (CONABIO, Leptonycteris yerbabuenae).
-               Generalización: cochinillas de humedad como descomponedoras de hojarasca. -->
+          <!-- Datos de rata: fuentes verificadas (ver la rama research/fuentes-experimentos y las Referencias de la página para docentes).
+               Exploración: roedores que entierran semillas que luego germinan (Vander Wall, 2010, Phil. Trans. R. Soc. B, 365(1542), 989–997).
+               Nuevos puntos de vista: la lechuza de campanario come sobre todo roedores (González-Calderón, 2017, Huitzil, 18(2), 212–222).
+               Síntesis: murciélago magueyero, polinizador del agave (SADER, 2024, "Murciélagos: Polinizadores nocturnos y héroes de la agricultura"; la ficha de CONABIO no lo respalda).
+               Generalización: cochinillas de humedad como descomponedoras de hojarasca (Peralta et al., 2026, Universo Tucumano). -->
           <div class="ramona">
             <span class="av"></span>
             <div class="bubble"><b class="who">Dato de rata</b><p>Algunos de mis parientes, como las ardillas y ciertos ratones de campo, entierran semillas para comerlas después… ¡y a veces se les olvida dónde! De esas semillas olvidadas nacen plantas nuevas. Y ese es un dato de rata.</p></div>
@@ -843,6 +846,59 @@ footer .wrap { display: grid; gap: 6px; }
           <p>Ramona, la marioneta de rata de los videos, acompaña al alumnado con una bienvenida, pistas en el reto rápido y un dato de rata por fase. En los videos, el equipo corrige sus ideas previas frente a cámara.</p>
           <p>La carta de San Miguel de las Flores y la presidenta municipal son ficticias, creadas para esta actividad.</p>
         </div>
+      </div>
+      <div class="prose refs" id="referencias">
+        <h3>Referencias</h3>
+        <p>Son las mismas fuentes de los guiones de los tres videos. Se agrupan según la entrega del equipo de la que salen; las del final respaldan los experimentos de los videos y los datos de rata.</p>
+
+        <h4>Plan y programa (Entregas I y II: Revisión curricular)</h4>
+        <ul>
+          <li>Secretaría de Educación Pública. (2024). <i>Programa de estudio para la educación primaria: Programa sintético de la Fase 5</i>. https://educacionbasica.sep.gob.mx/wp-content/uploads/2024/08/6.pdf</li>
+        </ul>
+
+        <h4>Concepto de ecosistema (Entrega III: Referente disciplinar)</h4>
+        <ul>
+          <li>Armenteras, D., González, T. M., Vergara, L. K., Luque, F. J., Rodríguez, N., &amp; Bonilla, M. A. (2016). Revisión del concepto de ecosistema como “unidad de la naturaleza” 80 años después de su formulación. <i>Ecosistemas</i>, <i>25</i>(1), 83–89. https://doi.org/10.7818/ECOS.2016.25-1.12</li>
+          <li>Evaluación de los Ecosistemas del Milenio. (2005). <i>Los ecosistemas y el bienestar humano: Humedales y agua. Informe de síntesis</i>. World Resources Institute.</li>
+          <li>Ley Quiñónez, C. P. (2025). ODS 15. Vida de ecosistemas terrestres. En A. Santamaría Miranda &amp; M. de los Á. Cervantes Rosas (Eds.), <i>Objetivos de Desarrollo Sostenible</i> (pp. 287–303). Ediciones Comunicación Científica. https://doi.org/10.52501/cc.359.15</li>
+          <li>Maderey Rascón, L. E. (2025). <i>Principios de hidrogeografía: Estudio del ciclo hidrológico</i> (Textos Universitarios, núm. 1). Instituto de Geografía, Universidad Nacional Autónoma de México. https://doi.org/10.14350/gsxxi.tu.01</li>
+          <li>Rincón, M. E. (2011). El origen del concepto ecosistema. <i>Bio-grafía: Escritos sobre la Biología y su Enseñanza</i>, (Número extraordinario), 342–350. https://doi.org/10.17227/20271034.vol.0num.0bio-grafia342.350</li>
+        </ul>
+
+        <h4>Ideas previas del alumnado (Entrega IV: Ideas previas)</h4>
+        <ul>
+          <li>Martín del Pozo, R. (Coord.). (2013). <i>Las ideas «científicas» de los alumnos y alumnas de Primaria: Tareas, dibujos y textos</i>. Universidad Complutense de Madrid.</li>
+          <li>Motta Montiel, K. A., &amp; Uyaban Sandoval, A. del P. (2017). Caracterización de ideas previas sobre el concepto de ecosistema en estudiantes del grupo 505 del Colegio Minuto de Dios, ubicado en Ciudad Verde, Soacha-Cundinamarca. <i>Bio-grafía: Escritos sobre la Biología y su Enseñanza</i>, <i>10</i>(18), 42–52. https://doi.org/10.17227/20271034.vol.10num.18bio-grafia42.52</li>
+        </ul>
+
+        <h4>Diseño de los videos (lecturas del curso)</h4>
+        <ul>
+          <li>Reynoso Díaz, A., Zepeda Ortega, I. E., &amp; Rodríguez Maldonado, R. (2019). <i>Podcast educativo: Planeación, análisis, diseño, desarrollo y evaluación</i>. Universidad Nacional Autónoma de México, Escuela Nacional Colegio de Ciencias y Humanidades.</li>
+          <li>Suárez Carrasco, L., &amp; Vallín Gallegos, A. (2017). <i>Cómo elaborar videos educativos</i>. Universidad de Guadalajara, Sistema de Universidad Virtual.</li>
+        </ul>
+
+        <h4>Experimentos de los videos y datos de rata</h4>
+        <ul>
+          <li>Carabalí-Banguero, D. C., Montoya-Lerma, J., &amp; Carabalí, A. (2018). Efecto de la exclusión de insectos visitantes florales en el cuajado de frutos de <i>Persea americana</i> (Lauraceae) cv. Hass. <i>Acta Zoológica Mexicana (N.S.)</i>, <i>34</i>, 1–9. https://doi.org/10.21829/azm.2018.3412121</li>
+          <li>CK-12. (2022). 2.8: Respiración celular y fotosíntesis. En <i>Ciencias de la vida para la secundaria (CK-12)</i>. LibreTexts Español. https://espanol.libretexts.org/Bookshelves/Educacion_Basica/Ciencias_de_la_vida_para_la_secundaria_(CK-12)/02:_Biolog%C3%ADa_Celular/2.08:_Respiraci%C3%B3n_celular_y_fotos%C3%ADntesis</li>
+          <li>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. (2026, 19 de agosto). <i>Polinización</i>. Biodiversidad Mexicana. https://www.biodiversidad.gob.mx/ecosistemas/procesose/polinizacion</li>
+          <li>Generation Genius. (s.f.-a). <i>Observando la fotosíntesis DIY</i>. https://www.generationgenius.com/es/activities/observando-la-fotosintesis-diy/</li>
+          <li>Generation Genius. (s.f.-b). <i>Terrario DIY</i>. https://www.generationgenius.com/es/activities/terrario-diy/</li>
+          <li>González-Calderón, A. (2017). Dieta de la lechuza de campanario (<i>Tyto alba</i>) en Ocoyoacac, Estado de México. <i>Huitzil, Revista Mexicana de Ornitología</i>, <i>18</i>(2), 212–222. https://doi.org/10.28947/hrmo.2017.18.2.279</li>
+          <li>KhanAcademyEspañol. (2017, 29 de enero). <i>El ciclo del agua | Ecología | Biología</i> [Video]. YouTube. https://www.youtube.com/watch?v=FIFvGQUGn8g</li>
+          <li>Museum of Science. (2025, 8 de junio). <i>DIY terrarium: Make a mini ecosystem</i> [Video]. https://www.mos.org/video/diy-terrarium-make-mini-ecosystem</li>
+          <li>Peralta, M., de Araujo, P. B., &amp; Isa-Miranda, Á. V. (2026). Bicho bolita <i>Armadillidium vulgare</i>. <i>Universo Tucumano</i>, (113). Fundación Miguel Lillo. https://www.lillo.org.ar/editorial/index.php/publicaciones/catalog/download/549/615/201?inline=1</li>
+          <li>Secretaría de Agricultura y Desarrollo Rural. (2024, 23 de julio). <i>Murciélagos: Polinizadores nocturnos y héroes de la agricultura</i>. Gobierno de México. https://www.gob.mx/agricultura/articulos/murcielagos-polinizadores-nocturnos-y-heroes-de-la-agricultura</li>
+          <li>Secretaría de Educación Pública. (2025a, 6 de febrero). <i>Ciclo del agua en una botella</i>. Nueva Escuela Mexicana Digital. https://nuevaescuelamexicana.sep.gob.mx/detalle-ficha/2961</li>
+          <li>Secretaría de Educación Pública. (2025b, 6 de febrero). <i>La descomposición de los alimentos</i>. Nueva Escuela Mexicana Digital. https://nuevaescuelamexicana.sep.gob.mx/contenido/coleccion/la-descomposicion-de-los-alimentos/</li>
+          <li>Secretaría de Educación Pública. (2026, 29 de octubre). <i>¡Jardín de esporas!</i> Nueva Escuela Mexicana Digital. https://nuevaescuelamexicana.sep.gob.mx/contenido/recurso/jardin-de-esporas/</li>
+          <li>Siemens Stiftung. (2017). <i>Dióxido de carbono en la respiración y en el aula: Información didáctica</i> [Métodos didácticos]. Portal de Medios CREA. https://crea-portaldemedios.siemens-stiftung.org/vieworig/106821</li>
+          <li>Siemens Stiftung. (2023). <i>Efectos del cambio climático: Emisión de CO₂ y acidificación de los océanos (instrucciones para los profesores)</i> [Instrucciones de experimentación]. Portal de Medios CREA. https://crea-portaldemedios.siemens-stiftung.org/vieworig/114505</li>
+          <li>U.S. Geological Survey. (2019, 12 de octubre). <i>El ciclo del agua</i>. Water Science School. https://www.usgs.gov/water-science-school/science/el-ciclo-del-agua-water-cycle-spanish</li>
+          <li>Universidad Nacional de Cuyo, Facultad de Ciencias Exactas y Naturales. (2020). <i>Guía 4: Respiración celular</i> [Guía de estudio]. https://fcen.uncuyo.edu.ar/upload/4-respiracion-celular.pdf</li>
+          <li>Vander Wall, S. B. (2010). How plants manipulate the scatter-hoarding behaviour of seed-dispersing animals. <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>, <i>365</i>(1542), 989–997. https://doi.org/10.1098/rstb.2009.0205</li>
+          <li>Williamson, B. (s.f.). <i>Floating leaf disk</i>. Cornell Institute for Biology Teachers, Cornell University. https://blogs.cornell.edu/cibt/labs-activities/labs/floating-leaf-disk-brad-williamson-2</li>
+        </ul>
       </div>
     </div>
   </section>
