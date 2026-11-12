@@ -684,21 +684,23 @@ footer .wrap { display: grid; gap: 6px; }
                 <li>Piedras pequeñas o grava</li>
                 <li>Carbón activado (opcional)</li>
                 <li>Tierra para macetas</li>
-                <li>Plantas pequeñas y musgo</li>
+                <li>2 o 3 plantas pequeñas y musgo</li>
                 <li>Atomizador con agua</li>
                 <li>Cuchara larga o palito para acomodar</li>
+                <li>Unas cochinillas del jardín (opcional)</li>
               </ul>
             </div>
             <div class="q">
               <span class="ql">Pasos</span>
+              <p class="hint"><b>Pide ayuda a una persona adulta.</b> Vierte el carbón despacio, usa guantes para la tierra y lávate las manos al terminar.</p>
               <ol class="how">
-                <li>Coloca una capa de piedras de unos 2 cm.</li>
-                <li>Agrega una capa delgada de carbón.</li>
-                <li>Pon tierra hasta llenar un tercio del frasco.</li>
-                <li>Haz hoyitos y planta con cuidado.</li>
-                <li>Cubre los espacios con musgo.</li>
-                <li>Rocía agua, sin encharcar, y cierra el frasco.</li>
-                <li>Déjalo cerca de una ventana, sin sol directo.</li>
+                <li>Coloca una capa de piedras de unos 2 cm.<br><span class="hint">Drenaje: el agua que sobra se queda abajo y las raíces no se pudren.</span></li>
+                <li>Agrega una capa delgada de carbón (opcional).<br><span class="hint">Ayuda a que el terrario no huela mal.</span></li>
+                <li>Pon tierra hasta llenar un tercio del frasco.<br><span class="hint">En la tierra viven descomponedores, y de ella toman las plantas lo que necesitan.</span></li>
+                <li>Haz hoyitos y planta con cuidado.<br><span class="hint">Las plantas son los productores: con la luz fabrican su alimento. Con dos o tres basta, porque cada una necesita espacio y luz.</span></li>
+                <li>Cubre los espacios con musgo.<br><span class="hint">Guarda la humedad, y también es una planta.</span></li>
+                <li>Rocía agua, sin encharcar, y cierra el frasco.<br><span class="hint">Opcional, antes de cerrar: agrega unas pocas cochinillas, con cuidado.</span></li>
+                <li>Déjalo cerca de una ventana, sin sol directo.<br><span class="hint">La luz es un factor abiótico: sin ella, las plantas no pueden hacer fotosíntesis.</span></li>
               </ol>
             </div>
           </div>
@@ -706,6 +708,22 @@ footer .wrap { display: grid; gap: 6px; }
           <div class="ramona">
             <span class="av"></span>
             <div class="bubble"><b class="who">Dato de rata</b><p>Las cochinillas de humedad (los bichitos bolita) comen hojas muertas y ayudan a convertirlas en abono para las plantas. Por eso hay quienes las ponen en sus terrarios. Y ese es un dato de rata.</p></div>
+          </div>
+
+          <div class="steps">
+            <p class="ql">Cuando el video te pida pausarlo, anota tu predicción:</p>
+            <div class="q">
+              <span class="ql" id="a6_agua_l">¿Se le va a acabar el agua a un terrario cerrado?</span>
+              <div class="options" role="radiogroup" aria-labelledby="a6_agua_l">
+                <label class="opt"><input type="radio" name="a6_agua" value="Sí" data-save="a6_agua" data-req="6"><span>Sí</span></label>
+                <label class="opt"><input type="radio" name="a6_agua" value="No" data-save="a6_agua"><span>No</span></label>
+                <label class="opt"><input type="radio" name="a6_agua" value="No sé" data-save="a6_agua"><span>No sé</span></label>
+              </div>
+            </div>
+            <div class="q">
+              <label for="a6_agua_porque">¿Por qué lo crees?</label>
+              <textarea id="a6_agua_porque" data-save="a6_agua_porque" data-req="6"></textarea>
+            </div>
           </div>
 
           <div class="q">
@@ -720,11 +738,16 @@ footer .wrap { display: grid; gap: 6px; }
           </div>
 
           <div class="q">
+            <label for="a6_semana">Después de una semana: ¿se le acabó el agua a tu terrario? ¿Se pareció a tu predicción? ¿Por qué crees que pasó así?</label>
+            <textarea id="a6_semana" data-save="a6_semana" data-req="6"></textarea>
+          </div>
+
+          <div class="q">
             <label for="a6_cambios">¿Tu terrario funcionó como lo diseñaste? ¿Qué cambiaste al construirlo y por qué?</label>
             <textarea id="a6_cambios" data-save="a6_cambios" data-req="6"></textarea>
           </div>
           <div class="q">
-            <label for="a6_aprendi">Mira tu primera respuesta a la carta del pueblo. ¿Cambiaste de opinión? ¿Qué aprendiste sobre cuidar los ecosistemas?</label>
+            <label for="a6_aprendi">Vuelve a leer tu carta al pueblo (Actividad 4). Después de construir tu terrario, ¿le agregarías o le cambiarías algo? ¿Qué aprendiste sobre cuidar los ecosistemas?</label>
             <textarea id="a6_aprendi" data-save="a6_aprendi" data-req="6"></textarea>
           </div>
         </div>
@@ -762,7 +785,7 @@ footer .wrap { display: grid; gap: 6px; }
             <tr><td>Conceptos de ecosistema</td><td>Usa correctamente respiración, fotosíntesis, bióticos, abióticos, red alimentaria y polinización para explicar los frascos y la red de San Miguel.</td><td>Usa algunos conceptos con pequeños errores.</td><td>Menciona los conceptos sin explicarlos.</td></tr>
             <tr><td>Carta al pueblo</td><td>Da una recomendación clara, dos o más razones científicas y una alternativa segura.</td><td>Da una recomendación con una razón.</td><td>Da una opinión sin razones.</td></tr>
             <tr><td>Diseño del terrario</td><td>Incluye todas las capas, etiqueta bióticos y abióticos y dibuja el ciclo del agua.</td><td>Incluye la mayoría de los elementos.</td><td>El dibujo está incompleto o sin etiquetas.</td></tr>
-            <tr><td>Construcción y bitácora</td><td>Construye el terrario siguiendo su diseño y registra observaciones todos los días.</td><td>Construye el terrario y registra algunas observaciones.</td><td>Construye el terrario sin registrar observaciones.</td></tr>
+            <tr><td>Construcción y bitácora</td><td>Construye el terrario siguiendo su diseño, registra observaciones todos los días y compara su predicción con lo que observó.</td><td>Construye el terrario, registra algunas observaciones y menciona su predicción.</td><td>Construye el terrario sin registrar observaciones.</td></tr>
           </tbody>
         </table>
       </div>
@@ -804,7 +827,7 @@ footer .wrap { display: grid; gap: 6px; }
             <li><strong>Exploración:</strong> el Video 1 muestra siete frascos sin explicar los resultados; el alumnado predice en una pausa, compara y se queda con cuatro preguntas abiertas que responde el Video 2 (Actividad 3). Después, la carta del pueblo (Actividad 2). Ambas activan ideas previas sin dar respuestas.</li>
             <li><strong>Introducción de nuevos puntos de vista:</strong> el Video 2 responde las cuatro preguntas de los frascos con respiración, fotosíntesis, luz y descomponedores, y arma la red de San Miguel sin dar la recomendación. En la Actividad 3, el alumnado contesta de nuevo una respuesta de la Actividad 1, pone a prueba la red quitándole una parte (predice y comprueba) y convierte en red la cadena de la Actividad 2, que se queda como diagnóstico.</li>
             <li><strong>Síntesis:</strong> en dos actividades, el alumnado aplica los conceptos: primero responde la carta del pueblo (Actividad 4) y después diseña el terrario en papel (Actividad 5).</li>
-            <li><strong>Generalización:</strong> el tutorial lleva el diseño a un modelo real y observable (Actividad 6).</li>
+            <li><strong>Generalización:</strong> el Video 3 lleva el diseño a un terrario real y explica para qué sirve cada paso (Actividad 6). El alumnado predice en una pausa si a un terrario cerrado se le acaba el agua, lo observa una semana en su bitácora, compara su predicción con lo que pasó y vuelve a leer su carta al pueblo.</li>
           </ul>
           <p>Ramona, la marioneta de rata de los videos, acompaña al alumnado con una bienvenida, pistas en el reto rápido y un dato de rata por fase. En los videos, el equipo corrige sus ideas previas frente a cámara.</p>
           <p>La carta de San Miguel de las Flores y la presidenta municipal son ficticias, creadas para esta actividad.</p>
@@ -831,7 +854,7 @@ const VIDEOS = {
 const VIDEO_TEXT = {
   experimento: "Video 1: siete frascos para poner a prueba si la vida puede seguir en un frasco cerrado.",
   concepto: "Video 2: ¿por qué cambiaron los frascos? Las respuestas a las cuatro preguntas y la red de San Miguel de las Flores.",
-  tutorial: "Video tutorial: cómo construir el terrario que diseñaste en papel."
+  tutorial: "Video tutorial: Diana, Alexis y Adonis construyen un terrario paso por paso y explican para qué sirve cada parte. Ramona pone a prueba su diseño y descubre por qué el agua no se acaba en un terrario cerrado."
 };
 /* ======================================================================== */
 
@@ -1093,8 +1116,10 @@ function compile() {
   L.push("Elementos del diseño:", ...checks);
   L.push("Explicación del diseño: " + v("a5_explica"), "Parecidos con San Miguel: " + v("a5_relacion"), "");
   L.push("ACTIVIDAD 6 · Construcción del terrario");
+  L.push("¿Se le va a acabar el agua a un terrario cerrado?: " + v("a6_agua") + ". ¿Por qué?: " + v("a6_agua_porque"));
   for (let d = 1; d <= 7; d++) L.push("Día " + d + ": " + v("a6_d" + d));
-  L.push("¿Funcionó como lo diseñé?: " + v("a6_cambios"), "¿Qué aprendí?: " + v("a6_aprendi"));
+  L.push("Después de una semana: " + v("a6_semana"));
+  L.push("¿Funcionó como lo diseñé?: " + v("a6_cambios"), "Mi carta al pueblo, después del terrario: " + v("a6_aprendi"));
   return L.join("\n");
 }
 const toast = document.getElementById("toast"), area = document.getElementById("copyArea");
