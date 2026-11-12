@@ -1,6 +1,6 @@
 # Guion. Video 3: ¡Construye tu terrario!
 
-> **Versión 4** (borrador, 8 nov 2026), con los frascos del experimento nuevo; el terrario de muestra se arma antes y se graba en casa.
+> **Versión 4** (borrador, 12 nov 2026), con los frascos del experimento nuevo; el terrario de muestra se arma antes y se graba en casa.
 
 ## 1. Ficha de identificación
 

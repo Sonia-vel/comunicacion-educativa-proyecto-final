@@ -1,6 +1,6 @@
 # Guion. Video 2: ¿Por qué cambiaron los frascos?
 
-> **Versión 4** (borrador, 8 nov 2026), con el experimento nuevo del Video 1: agua de cal y discos de espinaca en lugar de jugo de col morada, descomposición de 7 días con pan y plátano, y grabación en casa.
+> **Versión 4** (borrador, 12 nov 2026), con el experimento nuevo del Video 1: agua de cal y discos de espinaca en lugar de jugo de col morada, descomposición de 7 días con pan y plátano, y grabación en casa.
 
 ## 1. Ficha de identificación
 
