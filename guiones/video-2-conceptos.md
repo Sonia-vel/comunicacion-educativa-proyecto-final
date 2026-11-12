@@ -1,6 +1,6 @@
 # Guion. Video 2: ¿Por qué cambiaron los frascos?
 
-> **Versión 4** (borrador, 12 nov 2026), con el experimento nuevo del Video 1: agua de cal y discos de espinaca en lugar de jugo de col morada, descomposición de 7 días con pan y plátano, y grabación en casa.
+> **Versión 5** (12 nov 2026), con el experimento nuevo del Video 1: agua de cal y discos de espinaca, descomposición de 7 días con pan y plátano, y calendario de grabación.
 
 ## 1. Ficha de identificación
 
@@ -21,6 +21,7 @@
 | Responsable del video | Alexis |
 | Guion | Adonis, Alexis, Diana y Sonia |
 | Cámara | iPhone (principal) y Pixel 7 (secundaria). Cada escena la graba quien pueda en ese momento; se puede pedir ayuda a una compañera del grupo. |
+| Grabación y entrega a edición | Mié 18 nov en la universidad, en una sola sesión con el Video 3 (primero el 2). Material a Adonis el 18 nov por la noche; video editado el mar 24 nov; en YouTube y en la WebQuest el mié 25 nov. |
 | Edición, música y animaciones | Adonis |
 | Voz de Ramona | Sonia |
 
@@ -29,7 +30,7 @@
 - **Qué se quiere:** responder, una por una y en orden, las cuatro preguntas con las que cierra el Video 1. Cada concepto entra cuando hace falta para responder una pregunta, nunca como lista de temas, de lo concreto (los frascos) a lo abstracto (la red de San Miguel).
 - **Ramona:** es donde más pesa. Retoma sus dos predicciones del Video 1, que ahora sí se corrigen, y dice dos ideas previas nuevas ("¡es una cadena!" y "solo se quedan sin miel"). La secuencia es siempre la misma: Ramona dice su idea → el equipo la pone a prueba con lo que se vio en los frascos → Ramona dice con sus palabras lo que entendió. Da dos datos de rata: uno de descomposición y otro de la red.
 - **Cómo se va a desarrollar:** un repaso de las cuatro preguntas con clips del Video 1; las dos preguntas de los frascos con agua (respiración, fotosíntesis, luz, relación y equilibrio); las dos de los frascos de descomposición (descomponedores, cochinillas); la red del frasco con tarjetas y estambre; la red de San Miguel de las Flores, en la que Ramona jala el hilo de las abejas. Cierra sin dar la recomendación al pueblo: esa la escribe el alumnado en la Actividad 4.
-- **Dónde se va a grabar:** en casa, entre el 18 y el 21 nov, después del día 7 del Video 1 (usa sus clips). Puede ser en una sola casa o repartido: las tomas de Ramona y las de los frascos en casa de Sonia, y la conducción donde convenga. **[?] fecha exacta de la sesión.**
+- **Dónde se va a grabar:** en la universidad, el miércoles 18 nov, después del día 7 del Video 1 (usa sus clips), en la misma sesión que las tomas con personas del Video 1 y que el Video 3. Sonia lleva los siete frascos y el agua de cal para la demostración del popote.
 - **Clips del Video 1 que se reutilizan:** las cuatro preguntas en pantalla (fila 13 del Video 1); la pantalla dividida día 0 / día 2 de los frascos 1 y 2; los time-lapse de los discos de los frascos 3 y 4 en el día 0; la pantalla dividida día 0 / día 7 de los frascos de descomposición.
 - **Utilería y materiales:** los siete frascos del experimento en la mesa (los de descomposición, cerrados); vaso de precipitados con agua de cal colada; tarjeta con letra negra; popote; dos cartulinas blancas; tarjetas de colores con dibujo y nombre (verde: productores; naranja: consumidores; café: descomponedores; azul: lo que no tiene vida); estambre rojo; cinta; Ramona.
 - **Las dos redes:**
@@ -76,6 +77,7 @@ Las acotaciones técnicas van entre paréntesis; el texto hablado se escribe tal
 - [ ] No se da la recomendación al pueblo.
 - [ ] Sonia queda fuera de cuadro y sin diálogo en todo el video.
 - [ ] Ningún turno pasa de unas 25 palabras; lo largo se reparte entre dos voces.
+- [ ] Traslado a la universidad para el 18 nov: frascos con tapa en caja con periódico, agua de cal en botella cerrada (preparada antes en casa) y el terrario de muestra de Alexis.
 - [ ] Lo que se dice del agua de cal, los discos y los restos coincide con lo que se vio en el Video 1.
 - [ ] "Frasco", nunca "vaso" (salvo el vaso de precipitados de la demostración). Lenguaje para 6.º grado, inclusivo y sin "e" ni "x"; números con letra en lo hablado.
 - [ ] Música por debajo de la voz; el chillido de Ramona siempre igual.
