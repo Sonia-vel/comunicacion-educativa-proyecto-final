@@ -1,6 +1,6 @@
 # Guion. Video 3: ¡Construye tu terrario!
 
-> **Versión 5** (12 nov 2026), con los frascos del experimento nuevo y calendario de grabación; el terrario de muestra se arma antes.
+> **Versión final** (12 nov 2026), con las correcciones de la profesora (DMLV, 12 nov) y el calendario nuevo de grabación; el terrario de muestra se arma antes.
 
 ## 1. Ficha de identificación
 
@@ -8,31 +8,31 @@
 |---|---|
 | Título | ¡Construye tu terrario! |
 | Serie | Guardianes del Ecosistema, video 3 de 3 |
-| Fase de la WebQuest | Generalización (Actividad 6) |
-| Tipo de video (estructura / función) | Tutorial / Aplicación o generalización |
+| Fase de la secuencia didáctica | Generalización (Actividad 6) |
+| Tipo de video (estructura / función) | Tutorial / Instructivo (Suárez y Vallín, 2017) |
 | Grado y campo formativo | 6.º de primaria, Saberes y Pensamiento Científico (NEM 2022; SEP, 2024) |
 | Contenido | Ecosistemas: interacciones entre factores bióticos y abióticos, ciclo del agua y equilibrio en un ecosistema cerrado |
 | Objetivo del video | Al terminar el video, el alumnado podrá construir el terrario que diseñó en la Actividad 5, explicar para qué sirve cada capa y cada ser vivo según cómo se relacionan, y registrar en su bitácora cómo el agua y el aire dan vueltas dentro del frasco. |
-| Ideas previas que se corrigen | El ecosistema como lista de componentes: "entre más plantas y animales le meta, mejor terrario" (Ramona trae un diseño con todo, hasta una abeja). Causalidad lineal: "si lo cierran, se le acaba el agua y el aire". Las dice Ramona y el equipo las pone a prueba frente a cámara. Fuentes: Motta y Uyaban (2017); Martín del Pozo (2013). |
+| Ideas previas que se modifican | El ecosistema como lista de componentes: "entre más plantas y animales le meta, mejor terrario" (Ramona trae un diseño con todo, hasta una abeja). Causalidad lineal: "si lo cierran, se le acaba el agua y el aire". Las dice Ramona y el equipo las pone a prueba frente a cámara. Fuentes: Motta y Uyaban (2017); Martín del Pozo (2013). |
 | Idea clave para recordar | Un terrario funciona porque sus partes se relacionan: el agua, el aire y la materia dan vueltas dentro del frasco. |
 | Duración estimada | 6:00 (cuerpo 5:45 + créditos) |
 | Voces y personajes | Diana (conducción y construcción a cuadro, pasos 4 a 7) y Adonis (conducción con Ramona y explicación de los pasos); Alexis (construcción de las capas, pasos 1 a 3, y terrario de muestra, fila 13); Ramona (voz en vivo: Sonia). |
-| Palabras clave | terrario, capas, drenaje, productor, descomponedor, factores bióticos y abióticos, evaporación, condensación, ciclo del agua, equilibrio, bitácora |
+| Palabras clave | Terrario, capas, drenaje, productor, descomponedor, factores bióticos y abióticos, evaporación, condensación, ciclo del agua, equilibrio, bitácora |
 | Responsable del video | Diana |
 | Guion | Adonis, Alexis, Diana y Sonia |
 | Cámara | iPhone (principal, cenital para los pasos) y Pixel 7 (secundaria, plano medio). Cada escena la graba quien pueda en ese momento; se puede pedir ayuda a una compañera del grupo. |
-| Grabación y entrega a edición | Terrario de muestra: lo arma Alexis el 12 o 13 nov, con una foto diaria. Grabación: mié 18 nov en la universidad, en una sola sesión con el Video 2 (después del 2). Material a Adonis el 18 nov por la noche; video editado el mar 24 nov; en YouTube y en la WebQuest el mié 25 nov. |
+| Grabación y entrega a edición | Terrario de muestra: lo arma Alexis el vie 13 o el sáb 14 nov, con una foto diaria. Grabación: mié 25 nov en la universidad, en una sola sesión con el Video 2 (después del 2). Material a Adonis el 25 nov por la noche; video editado el mar 1 dic; en YouTube y en la secuencia didáctica el mié 2 dic. |
 | Edición, música y animaciones | Adonis |
 | Voz de Ramona | Sonia |
 
 ## 2. Planeación
 
 - **Qué se quiere:** que el alumnado convierta su diseño de papel en un terrario real, paso por paso, entendiendo para qué sirve cada parte. Cada paso se explica por la relación que cumple (drenaje, nutrientes, productores, descomponedores, luz), no como receta.
-- **Ramona:** sigue como alumna. Trae su propio diseño "con todo" (diez plantas, una lagartija, una abeja… y ella misma adentro). Durante la construcción, el equipo pone a prueba su diseño con preguntas y con lo que se vio en los frascos del experimento, y ella lo ajusta. Predice que el terrario cerrado se va a secar; el terrario de muestra la desmiente. Da un dato de rata (cochinillas, el mismo de la WebQuest). Se despide de la serie.
+- **Ramona:** sigue como alumna. Trae su propio diseño "con todo" (diez plantas, una lagartija, una abeja… y ella misma adentro). Durante la construcción, el equipo pone a prueba su diseño con preguntas y con lo que se vio en los frascos del experimento, y ella lo ajusta. Predice que el terrario cerrado se va a secar; el terrario de muestra la desmiente. Da un dato de rata (cochinillas, el mismo de la secuencia didáctica). Se despide de la serie.
 - **Cómo se va a desarrollar:** Diana y Adonis con el diseño de papel; entra Ramona con el suyo; materiales; los siete pasos de la Actividad 6, con cenital de las manos de Alexis (capas) y de Diana (plantas, musgo, cierre y lugar); la predicción de Ramona al cerrar; el terrario de muestra de varios días después (gotitas en las paredes) y la explicación del ciclo del agua; cierre con la bitácora y lo que le falta al terrario frente a San Miguel.
-- **Terrario de muestra:** como el video necesita mostrar gotitas y cambios después de varios días, se arma uno **antes** de la grabación y se fotografía todos los días con la misma toma. Lo arma Alexis el jueves 12 o el viernes 13 nov, en su casa, para tener 5 o 6 días de fotos al grabar, y lo lleva a la sesión.
-- **Dónde se va a grabar:** en la universidad, el miércoles 18 nov, en la misma sesión del Video 2 (después de él).
-- **Utilería y materiales:** frasco de vidrio limpio con tapa (de boca ancha, para que se vean las manos); piedras pequeñas o grava; carbón activado; tierra para macetas; dos o tres plantas pequeñas (musgo, helecho pequeño, peperomia o fitonia); atomizador con agua; cuchara larga o palito; unas cochinillas (opcional); el diseño de papel de Diana y el de Ramona (dibujos grandes, legibles a cámara); el terrario de muestra; cartulina blanca de fondo; guantes; Ramona.
+- **Terrario de muestra:** como el video necesita mostrar gotitas y cambios después de varios días, se arma uno **antes** de la grabación y se fotografía todos los días con la misma toma. Lo arma Alexis el viernes 13 o el sábado 14 nov, en su casa, para tener 11 o 12 días de fotos al grabar, y lo lleva a la sesión.
+- **Dónde se va a grabar:** en la universidad, el miércoles 25 nov, en la misma sesión del Video 2 (después de él).
+- **Utilería y materiales:** frasco de vidrio limpio con tapa (de boca ancha, para que se vean las manos); piedras pequeñas o grava; carbón activado; tierra para macetas; dos o tres plantas pequeñas (musgo, helecho pequeño, peperomia o fitonia); atomizador con agua; cuchara larga o palito; unas cochinillas (opcional); el diseño de papel de Diana y el de Ramona (dibujos grandes, legibles a cámara); el terrario de muestra; cartulina blanca de fondo; guantes; Ramona (la marioneta de guante).
 - **Manejo gestual:** tono de tutorial, tranquilo y paso por paso, con pausas para que el alumnado haga lo mismo. Cada paso abre con su número y nombre en pantalla. Las manos de Alexis y de Diana se graban en cenital, sin prisa; la cámara secundaria toma a Adonis y Ramona reaccionando. Con Ramona, el equipo toma en serio su diseño: le pregunta, no se burla.
 - **Seguridad:** el carbón activado se vierte despacio, sin soplar el polvo; guantes para la tierra y lavarse las manos al terminar; el frasco de vidrio lo maneja una persona adulta o con cuidado sobre la mesa. Las cochinillas se toman con cuidado del jardín, pocas, y se regresan si el terrario se desarma. En pantalla, al inicio: "Pide ayuda a una persona adulta".
 
@@ -40,7 +40,7 @@
 
 - **Entrada:** cortinilla de 6 s con el logotipo de la UPN, "Guardianes del Ecosistema" y el título del video. Adonis escoge la canción de la serie y hace las animaciones.
 - **Aparición de Ramona:** efecto corto y siempre igual (un chillido de rata) cuando entra a cuadro. Solo marca su entrada.
-- **Cierre:** idea clave en pantalla, invitación a lo que sigue en la WebQuest y despedida de Ramona.
+- **Cierre:** idea clave en pantalla, invitación a lo que sigue en la secuencia didáctica y despedida de Ramona.
 - **Salida:** créditos sobre la música de la serie (guion, conducción, voz de Ramona, cámara, edición, música, referencias).
 
 ## 4. Guion técnico-literario
@@ -51,7 +51,7 @@ Las acotaciones técnicas van entre paréntesis; el texto hablado se escribe tal
 |---|---|---|---|---|---|
 | 1 | 0:00–0:06 | Entrada | (Cortinilla: logotipo UPN, "Guardianes del Ecosistema", "Video 3: ¡Construye tu terrario!") | — | (Música de la serie, entra y baja) |
 | 2 | 0:06–0:28 | Inicio: del papel al frasco | (Plano medio de Diana, Alexis y Adonis en la mesa; delante, los materiales y el diseño de papel de Diana. Texto: Pide ayuda a una persona adulta) | DIANA: ¡Hola! Somos Diana, Alexis y Adonis. En la Actividad cinco diseñaste tu terrario en papel. Hoy lo vamos a construir de verdad.<br>ADONIS: Ten a la mano tu diseño y tus materiales. Puedes pausar el video en cada paso. | (Música de fondo, por debajo de la voz) |
-| 3 | 0:28–0:55 | Inicio: el diseño de Ramona | (Ramona asoma por el borde de la mesa con su dibujo: muchas plantas, una lagartija, una abeja y una rata adentro. Acercamiento al dibujo) | RAMONA: ¡Yo también hice el mío! Le puse diez plantas, una lagartija, una abeja… ¡y a mí! Entre más cosas, mejor terrario.<br>ADONIS: Está muy completo, Ramona. Pero acuérdate de los frascos: ¿qué importaba más, cuántas cosas había o cómo se relacionaban?<br>RAMONA: Mmm… cómo se relacionaban.<br>ADONIS: Entonces vamos a construirlo paso por paso, y en cada paso revisas tu diseño. | (Chillido de entrada de Ramona) |
+| 3 | 0:28–0:55 | Inicio: el diseño de Ramona | (Ramona se asoma por el borde de la mesa con su dibujo: muchas plantas, una lagartija, una abeja y una rata adentro. Acercamiento al dibujo) | RAMONA: ¡Yo también hice el mío! Le puse diez plantas, una lagartija, una abeja… ¡y a mí! Entre más cosas, mejor terrario.<br>ADONIS: Está muy completo, Ramona. Pero acuérdate de los frascos: ¿qué importaba más, cuántas cosas había o cómo se relacionaban?<br>RAMONA: Mmm… cómo se relacionaban.<br>ADONIS: Entonces vamos a construirlo paso por paso, y en cada paso revisas tu diseño. | (Chillido de entrada de Ramona) |
 | 4 | 0:55–1:15 | Desarrollo: materiales | (Plano cenital de los materiales en fila sobre cartulina blanca; el nombre de cada uno aparece en pantalla al señalarlo) | DIANA: Vas a necesitar: un frasco de vidrio limpio con tapa, piedritas y carbón activado, que es opcional.<br>ALEXIS: También tierra para macetas, plantas pequeñas y musgo, un atomizador con agua y una cuchara larga o un palito. | (Música baja) |
 | 5 | 1:15–1:42 | Paso 1: piedras | (Texto: Paso 1. Piedras: 2 cm. Cenital: Alexis pone las piedras con la cuchara; regla junto al frasco) | ALEXIS: Primero, una capa de piedras de unos dos centímetros.<br>RAMONA: ¿Piedras? ¡Si las plantas no comen piedras!<br>ADONIS: ¿Y qué crees que le pasa al agua que sobra cuando riegas?<br>RAMONA: Se va para abajo… ¡y se queda entre las piedras, no en las raíces!<br>DIANA: Eso se llama drenaje. Así las raíces no se pudren. | (Música baja) |
 | 6 | 1:42–2:00 | Paso 2: carbón | (Texto: Paso 2. Carbón (opcional). Cenital: Alexis vierte despacio una capa delgada. Texto: Viértelo despacio, sin soplar el polvo) | ALEXIS: Luego, una capa delgada de carbón activado. Ayuda a que el terrario no huela mal. Si no tienes, puedes saltarte este paso. | (Música baja) |
@@ -68,14 +68,14 @@ Las acotaciones técnicas van entre paréntesis; el texto hablado se escribe tal
 
 ### Comprobaciones antes de grabar
 
-- [ ] Duración del cuerpo de 6 min como máximo (borrador: 6:00 con entrada; 6:15 con créditos).
+- [ ] Duración del cuerpo de 6 min como máximo (guion: 6:00 con entrada; 6:15 con créditos).
 - [ ] La voz ocupa entre el 60 y el 80 % del tiempo; hay silencios para observar y hacer (filas 8, 11 y 13).
-- [ ] Los siete pasos y los materiales coinciden con la Actividad 6 de la WebQuest.
+- [ ] Los siete pasos y los materiales coinciden con la Actividad 6 de la secuencia didáctica.
 - [ ] Cada paso dice para qué sirve (la relación), no solo qué hacer.
 - [ ] Ramona dice dos ideas previas (filas 3 y 8: "entre más cosas, mejor"; fila 11: "se le acaba el agua y el aire") y el equipo las pone a prueba; ella dice lo correcto con sus palabras solo después. Nunca dice que el equipo le dio la respuesta.
 - [ ] Se retoman términos del Video 2 (productor, consumidor, descomponedor, factor abiótico, fotosíntesis, equilibrio) y se nombran los nuevos (drenaje, evaporación, condensación, ciclo del agua). No se dice "flujo de energía".
 - [ ] El terrario de muestra está armado y fotografiado a diario antes de la sesión.
-- [ ] Traslado a la universidad para el 18 nov: frascos con tapa en caja con periódico, agua de cal en botella cerrada (preparada antes en casa) y el terrario de muestra de Alexis.
+- [ ] Traslado a la universidad para el 25 nov: frascos con tapa en caja con periódico, agua de cal en botella cerrada (preparada antes en casa) y el terrario de muestra de Alexis.
 - [ ] Sonia queda fuera de cuadro y sin diálogo en todo el video.
 - [ ] Ningún turno pasa de unas 25 palabras; lo largo se reparte entre dos voces.
 - [ ] "Terrario" para lo que construye el alumnado; "frasco" solo para el recipiente y para los frascos del experimento. Lenguaje para 6.º grado, inclusivo y sin "e" ni "x"; números con letra en lo hablado.
